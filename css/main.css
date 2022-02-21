@@ -329,7 +329,7 @@ nav {
     height: 285px;
     border-radius: 15px;
     padding: 1.5rem;
-    margin: 30px;
+    margin: 20px;
     background: white;
     position: relative;
     display: flex;
@@ -499,6 +499,61 @@ nav {
     }
     .menu-container{
         margin: 0px 0px;
+    }
+
+    /* CONTENT INFO*/
+
+    .content-info {
+        margin-top: 20px;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .content-info h2 {
+        color: aliceblue;
+        font-size: 15px;
+}
+    
+    /************* CARD MOBILE ***********/
+
+
+    .game_card {
+        width: 130px;
+        height: 180px;
+        border-radius: 7px;
+        margin: 10px;
+    }
+    .game_card::before {
+        border-radius: 7px;
+    }
+
+    .game_card:hover {
+        transform: translateY(5px);
+    }
+    .game_card img {
+        border-radius: 7px;
+    }
+
+    .game_card .info h1 {
+        font-size: 20px;
+    }
+    .game_card .info {
+
+        margin-bottom: -10px;
+    }
+    .game_card .info p {
+        font-size: 12px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .game_card .info button {
+        padding: 0.3rem;
+        border-radius: 1px;
+        font-size: 10px;
+    }
+
+    .wrapper {
+        margin: 20px;
     }
 }
 
