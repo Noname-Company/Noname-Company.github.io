@@ -432,9 +432,9 @@ nav {
 
 
 
+/******** NAVBAR MOBILE *********/
 
-
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .hamburger {
         display: none;
     }
@@ -442,6 +442,9 @@ nav {
         display: flex;
     }
 }
+
+/****** HOME SLIDER MOBILE*******/
+
 @media (max-width: 820px) {
     .img-slider {
         width: 100%;
