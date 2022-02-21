@@ -530,7 +530,21 @@ nav {
         margin: 0px 0px;
     }
 
+    /* CONTENT INFO*/
+
+    .content-info {
+        margin-top: 20px;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .content-info h2 {
+        color: aliceblue;
+        font-size: 15px;
+}
+    
     /************* CARD MOBILE ***********/
+
 
     .game_card {
         width: 110px;
