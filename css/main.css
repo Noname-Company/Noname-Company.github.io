@@ -418,7 +418,7 @@ nav {
 
 /************** FOOTER*****************/
 
-#index-footer {
+.index-footer {
 
     display: flex;
     justify-content: center;
