@@ -35,15 +35,18 @@ body {
   .sidebar .logo-details{
     height: 60px;
     width: 100%;
+    margin-top: 10px;
     display: flex;
     align-items: center;
+    text-align: center;
+    vertical-align: middle;
     cursor: pointer;
   }
   .sidebar .logo-details img{
+   
     width: 40px;
     text-align: center;
     margin-left: 20px;    
-    
   }
   .sidebar .logo-details .logo_name{
     font-size: 22px;
@@ -181,7 +184,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1d1b31;
+    background: transparent;
     padding: 12px 0;
     transition: all 0.5s ease;
   }
@@ -292,6 +295,7 @@ body {
     right: 0;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     overflow: visible;
     border-left: 0.5px solid #575757;
 
@@ -311,7 +315,7 @@ body {
     align-items: center;
     background: linear-gradient(227.26deg, rgba(139, 133, 133, 0.2) -9.44%, rgba(22, 22, 22, 0) 79.65%), #161616;
     width: calc(100% - 30px);
-    height: 200px;
+    max-height: 200px;
     border-radius: 15px;
     margin: 20px 0;
     padding-bottom: 10px;
@@ -325,12 +329,11 @@ body {
 
 .profile-section .profile-info .profile-image {
 
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     background-size: cover;
     border-radius: 50%;
     margin-top: -60px;
-    margin-bottom: 15px;
 }
 .profile-section .profile-info .profile-name {
 
@@ -339,14 +342,14 @@ body {
     padding: 12px 10px;
     color: rgb(0, 183, 255);
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
     letter-spacing: 1px;
 }
 .profile-section .profile-info .profile-button {
 
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     border-radius: 15px;
     margin: 0 auto 5px;
     text-align: center;
@@ -354,7 +357,7 @@ body {
     background: linear-gradient(265.82deg, rgba(28, 28, 28, 0.3) 17.01%, rgba(28, 28, 28, 0) 79.78%), #8C5CF2;
     color: #fff;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 10px;
     
     
 }
@@ -379,7 +382,7 @@ body {
 
 .profile-section .profile-info .profile-button:hover {
 
-    background-color: #5c1111;
+    background-color: #734dc4;
     transition: 0.4s;
 
     
@@ -454,9 +457,8 @@ body {
 
 .content-info {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     margin-top: 20px;
     padding: 20px;
     height: 50px;
@@ -464,9 +466,17 @@ body {
 
 .content-info h2 {
     color: aliceblue;
-    font-size: 35px;
-    text-align: center;
+    font-size: 25px;
+    padding-left: 100px;
 }
+
+.content-info a {
+    color: aliceblue;
+    font-size: 15px;
+    padding-left: 20px;
+    
+}
+
 
 
 /***************************************************************/
@@ -481,8 +491,21 @@ body {
     justify-content: center;
     /* Önceki hali buydu  ---> justify-content: space-evenly;  center ile değiştirdik.   */
     flex-wrap: wrap;
-    height: calc(100vh - 20px);
+    height: calc(100vh - 100px);
     overflow-y: scroll;
+}
+
+.wrapper2 {
+
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 50px;
+    padding: 0px 10px;
+    /* Önceki hali buydu  ---> justify-content: space-evenly;  center ile değiştirdik.   */
+    flex-wrap: nowrap;
+    height: 360px;
+    overflow-x: scroll;
+
 }
 
 .wrapper::-webkit-scrollbar-track
@@ -504,202 +527,187 @@ body {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #8c5cf2;
 }
-
-
-.content-container {
-
-    display: flex;
-    margin: 10px 20px;
-    /* Önceki hali buydu  ---> justify-content: space-evenly;  center ile değiştirdik.   */
-    flex-wrap: nowrap;
-    height: 220px;
-    overflow-x: scroll;
-
-}
-
-.content-container::-webkit-scrollbar-track
+.wrapper2::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: #575757;
 }
 
-.content-container::-webkit-scrollbar
+.wrapper2::-webkit-scrollbar
 {
-	height: 4px;
+	width: 4px;
+    height: 4px;
 	background-color: #363535;
 }
 
-.content-container::-webkit-scrollbar-thumb
+.wrapper2::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #8c5cf2;
 }
 
-/*****************************************************************************/
-
 :root {
-    --clr-dark: rgb(13, 17, 19);
-    --clr-light: #fff;
-    --clr-secondary: #0a84ff;
-  }
+  --clr-dark: rgb(13, 17, 19);
+  --clr-light: #fff;
+  --clr-secondary: #0a84ff;
+}
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .btn {
-    cursor: pointer;
-    padding: 0.5em 3em;
-    border: 0;
-    background: #8C5CF2;
-    color: var(--clr-light);
-    font-weight: bold;
-    font-size: 00.8rem;
-    border-radius: 12px;
+  cursor: pointer;
+  padding: 0.5em 3em;
+  border: 0;
+  background: #8C5CF2;
+  color: var(--clr-light);
+  font-weight: bold;
+  font-size: 00.8rem;
+  border-radius: 12px;
 }
 .game {
-    position: relative;
-    width: 8.8rem;
-    color: #fff;
+  position: relative;
+  width: 8.8rem;
+  min-width: 8.8rem;
+  height: fit-content;
+  color: #fff;
 
-    margin:30px;
+  margin:20px;
+  margin-top: 40px;
 }
 .streamers {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
 }
 .streamers img {
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
 }
 .front {
-    transition: 200ms;
+  transition: 200ms;
 }
 .front > img {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 .front .name {
-    margin: 0.75em 0;
-    font-size: 1em;
+  margin: 0.75em 0;
+  font-size: 1em;
 }
 .front .status {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .front .streamers img {
-    border: 1px solid var(--clr-dark);
+  border: 1px solid var(--clr-dark);
 }
 .front .streamers img:nth-child(1) {
-    z-index: 1;
-    transform: translateX(15px);
+  z-index: 1;
+  transform: translateX(15px);
 }
 .front .streamers img:nth-child(2) {
-    transform: translateX(10px);
+  transform: translateX(10px);
 }
 .back {
-    position: absolute;
-    top: 56%;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
+  position: absolute;
+  top: 56%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 .back .streaming-info {
-    columns: 2;
-    column-rule: 1px solid rgba(255, 255, 255, 0.6);
+  columns: 2;
+  column-rule: 1px solid rgba(255, 255, 255, 0.6);
 }
 .back .game-stat {
-    font-size: 0.8rem;
-    text-align: center;
+  font-size: 0.8rem;
+  text-align: center;
 }
 .back .game-stat span {
-    display: block;
-    font-size: 0.6rem;
+  display: block;
+  font-size: 0.6rem;
 }
 .back .streamers {
-    display: flex;
+  display: flex;
 }
 .backgroundWrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #1c1c1c;
-    z-index: -1;
-    transform: scale(0.2, 0.8);
-    opacity: 0;
-    border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1c1c1c;
+  z-index: -1;
+  transform: scale(0.2, 0.8);
+  opacity: 0;
+  border-radius: 12px;
 }
 .game:hover .front {
-    transform: translateY(-25%) scale(0.8);
+  transform: translateY(-25%) scale(0.8);
 }
 .game:hover .front .name {
-    animation: gameName 150ms forwards;
+  animation: gameName 150ms forwards;
 }
 .game:hover .front .status {
-    opacity: 0;
+  opacity: 0;
 }
 .game:hover .back {
-    opacity: 1;
+  opacity: 1;
 }
 .game:hover .back .streamers {
-    width: 100%;
-    justify-content: space-between;
+  width: 100%;
+  justify-content: space-between;
 }
 .game:hover .back .streamer {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 .game:hover .back .name {
-    font-weight: bold;
+  font-weight: bold;
 }
 .game:hover .rank {
-    top: -35px;
-    right: -30px;
+  top: -35px;
+  right: -30px;
 }
 .game:hover .backgroundWrapper {
-    transition: transform 200ms ease-in-out, opacity 100ms linear;
-    opacity: 1;
-    transform: scale(1.4, 1.2);
+  transition: transform 200ms ease-in-out, opacity 100ms linear;
+  opacity: 1;
+  transform: scale(1.4, 1.2);
 }
 .rank {
-    position: absolute;
-    right: 15px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    background: rgba(0, 0, 0, 0.75);
-    padding: 0.5em 0.5em;
-    clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0 100%, 0 0);
-    transition: 250ms ease-in-out;
+  position: absolute;
+  right: 15px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0.5em 0.5em;
+  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0 100%, 0 0);
+  transition: 250ms ease-in-out;
 }
 @keyframes gameName {
-    0% {
-        text-align: left;
-        opacity: 1;
-   }
-    20% {
-        text-align: left;
-        opacity: 0;
-   }
-    50% {
-        text-align: center;
-        opacity: 0;
-   }
-    100% {
-        text-align: center;
-        opacity: 1;
-   }
+  0% {
+      text-align: left;
+      opacity: 1;
+ }
+  20% {
+      text-align: left;
+      opacity: 0;
+ }
+  50% {
+      text-align: center;
+      opacity: 0;
+ }
+  100% {
+      text-align: center;
+      opacity: 1;
+ }
 }
-
-
-
-
 
 
 /************** FOOTER*****************/
