@@ -311,7 +311,7 @@ body {
     align-items: center;
     background: linear-gradient(227.26deg, rgba(139, 133, 133, 0.2) -9.44%, rgba(22, 22, 22, 0) 79.65%), #161616;
     width: calc(100% - 30px);
-    height: 300px;
+    height: 200px;
     border-radius: 15px;
     margin: 20px 0;
     padding-bottom: 10px;
@@ -503,97 +503,6 @@ body {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #8c5cf2;
-}
-
-.game_card {
-    width: 120px;
-    height: 180px;
-    border-radius: 15px;
-    padding: 1.5rem;
-    margin: 10px;
-    position: relative;
-    display: flex;
-    transition: 0.4s ease-out;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-}
-
-.game_card:hover {
-    transform: translateY(10px);
-}
-
-.game_card:hover:before {
-    opacity: 1;
-}
-
-.game_card:hover .info {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-.game_card:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 2;
-    transition: 0.5s;
-    opacity: 0;
-}
-
-.game_card img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 15px;
-}
-
-.game_card .info {
-    position: relative;
-    z-index: 3;
-    color: white;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.5s;
-    text-align: center;
-}
-
-.game_card .info h1 {
-    margin: 0px;
-    font-size: 16px;
-}
-
-.game_card .info p {
-    letter-spacing: 1px;
-    font-size: 8px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-
-.game_card .info button {
-    padding: 0.4rem;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    background: white;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s ease;
-    font-size: 10px;
-}
-
-.game_card .info button:hover {
-    background: dodgerblue;
-    color: white;
 }
 
 
