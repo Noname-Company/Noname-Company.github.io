@@ -6,8 +6,9 @@
 }
 
 body {
-    background-color: #1c1c1c;
     max-height: 100vh;
+    background-size: cover;
+    
 }
 
 
@@ -28,6 +29,8 @@ body {
 
   .sidebar.close{
     width: 78px;
+    background: none;
+    
   }
   .sidebar .logo-details{
     height: 60px;
@@ -272,7 +275,6 @@ body {
 .game-section {
 
     width: 85%;
-    background: linear-gradient(191.33deg, rgba(140, 92, 242, 0.2) -53.08%, rgba(0, 0, 0, 0) 61.44%), #1C1C1C;
     box-sizing: border-box;
 
 
@@ -296,7 +298,6 @@ body {
 
 
 
-    background: linear-gradient(311.72deg, rgba(140, 92, 242, 0.2) -36.18%, rgba(0, 0, 0, 0) 86.81%), #1C1C1C;
    
     padding-top: 15px;
 
