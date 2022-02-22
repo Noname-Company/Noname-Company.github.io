@@ -35,18 +35,18 @@ body {
   .sidebar .logo-details{
     height: 60px;
     width: 100%;
-    margin-top: 10px;
     display: flex;
     align-items: center;
-    text-align: center;
-    vertical-align: middle;
     cursor: pointer;
   }
   .sidebar .logo-details img{
-   
-    width: 40px;
+    font-size: 30px;
+    color: #fff;
+    height: auto;
+    min-width: 78px;
     text-align: center;
-    margin-left: 20px;    
+    line-height: 50px;
+    
   }
   .sidebar .logo-details .logo_name{
     font-size: 22px;
@@ -184,7 +184,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: #1d1b31;
     padding: 12px 0;
     transition: all 0.5s ease;
   }
@@ -482,7 +482,7 @@ body {
     justify-content: center;
     /* Önceki hali buydu  ---> justify-content: space-evenly;  center ile değiştirdik.   */
     flex-wrap: wrap;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 20px);
     overflow-y: scroll;
 }
 
@@ -512,10 +512,8 @@ body {
     border-radius: 15px;
     padding: 1.5rem;
     margin: 10px;
-    background: white;
     position: relative;
     display: flex;
-    align-items: flex-end;
     transition: 0.4s ease-out;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
@@ -566,6 +564,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: 0.5s;
+    text-align: center;
 }
 
 .game_card .info h1 {
@@ -597,6 +596,40 @@ body {
     background: dodgerblue;
     color: white;
 }
+
+
+.content-container {
+
+    display: flex;
+    margin: 10px 20px;
+    /* Önceki hali buydu  ---> justify-content: space-evenly;  center ile değiştirdik.   */
+    flex-wrap: nowrap;
+    height: 220px;
+    overflow-x: scroll;
+
+}
+
+.content-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #575757;
+}
+
+.content-container::-webkit-scrollbar
+{
+	height: 4px;
+	background-color: #363535;
+}
+
+.content-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #8c5cf2;
+}
+
+
 
 
 /************** FOOTER*****************/
