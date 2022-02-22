@@ -549,6 +549,42 @@ body {
 	background-color: #8c5cf2;
 }
 
+.wrapper-content-main {
+
+  display: block;
+  width: 100%;
+}
+.wrapper-content {
+
+  display: flex;
+  width: 100%;
+}
+
+.scroll-arrow-right {
+
+  font-size: 30px;
+  background-color: transparent;
+  color: #8C5CF2;
+  border: none;
+  outline: none;
+  margin-right: 35px;
+  cursor: pointer;
+
+  
+}
+.scroll-arrow-left {
+
+  font-size: 30px;
+  background-color: transparent;
+  color: #8C5CF2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+}
+
+
+
 :root {
   --clr-dark: rgb(13, 17, 19);
   --clr-light: #fff;
