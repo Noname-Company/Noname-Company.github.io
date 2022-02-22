@@ -7,16 +7,13 @@
 
 body {
     background-color: #1c1c1c;
-    min-width: 100vh;
+    max-height: 100vh;
 }
-
-
-
-
 
 
 /************SIDEBAR*******/
 .sidebar{
+   display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -37,6 +34,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   .sidebar .logo-details i{
     font-size: 30px;
@@ -45,6 +43,7 @@ body {
     min-width: 78px;
     text-align: center;
     line-height: 50px;
+    
   }
   .sidebar .logo-details .logo_name{
     font-size: 22px;
@@ -52,6 +51,8 @@ body {
     font-weight: 600;
     transition: 0.3s ease;
     transition-delay: 0.1s;
+    cursor: pointer;
+    margin-left: 10px;
   }
   .sidebar.close .logo-details .logo_name{
     transition-delay: 0s;
@@ -107,7 +108,7 @@ body {
     text-decoration: none;
   }
   .sidebar .nav-links li a .link_name{
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     color: #fff;
     transition: all 0.4s ease;
@@ -127,7 +128,7 @@ body {
   }
   .sidebar .nav-links li .sub-menu a{
     color: #fff;
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px 0;
     white-space: nowrap;
     opacity: 0.6;
@@ -158,7 +159,7 @@ body {
     display: none;
   }
   .sidebar.close .nav-links li .sub-menu .link_name{
-    font-size: 18px;
+    font-size: 12px;
     opacity: 1;
     display: block;
   }
@@ -209,7 +210,7 @@ body {
   .sidebar .profile-details .profile_name,
   .sidebar .profile-details .job{
     color: #fff;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
     white-space: nowrap;
   }
@@ -219,7 +220,7 @@ body {
     display: none;
   }
   .sidebar .profile-details .job{
-    font-size: 12px;
+    font-size: 9px;
   }
   .home-section{
     position: relative;
@@ -241,14 +242,14 @@ body {
   .home-section .home-content .bx-menu,
   .home-section .home-content .text{
     color: #11101d;
-    font-size: 35px;
+    font-size: 28px;
   }
   .home-section .home-content .bx-menu{
     margin: 0 15px;
     cursor: pointer;
   }
   .home-section .home-content .text{
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
   }
   @media (max-width: 420px) {
@@ -264,14 +265,15 @@ body {
 .main-container {
 
     display: flex;
-    margin-bottom: 0;    
+    margin-bottom: 0;  
+    margin-left: 78px;  
 }
 
 .game-section {
 
     width: 85%;
     background: linear-gradient(191.33deg, rgba(140, 92, 242, 0.2) -53.08%, rgba(0, 0, 0, 0) 61.44%), #1C1C1C;
-    
+    box-sizing: border-box;
 
 
   
@@ -280,9 +282,11 @@ body {
 .profile-section {
 
     width: 15%;
+    min-width: 200px;
     height: 100vh;
-    display: flex;
     position: fixed;
+    box-sizing: border-box;
+    display: flex;
     top: 0;
     right: 0;
     flex-direction: column;
@@ -306,11 +310,11 @@ body {
     flex-direction: column;
     align-items: center;
     background: linear-gradient(227.26deg, rgba(139, 133, 133, 0.2) -9.44%, rgba(22, 22, 22, 0) 79.65%), #161616;
-    width: 200px;
+    width: calc(100% - 30px);
     height: 300px;
     border-radius: 15px;
     margin: 20px 0;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     
 
 }
@@ -393,7 +397,8 @@ body {
 
 .profile-game-rooms {
 
-    display: inline-block;
+    display: block;
+    max-width: max-content;
 }
 .game-rooms::-webkit-scrollbar-track
 {
@@ -406,7 +411,7 @@ body {
 .game-rooms::-webkit-scrollbar
 {
 	width: 4px;
-    margin-block: 15px;
+  margin-block: 15px;
 	background-color: #363535;
     
 }
@@ -425,8 +430,9 @@ body {
 .profile-game-rooms .game-name {
 
     display: inline-block;
-    max-width: 180px;
+    max-width: 90px;
     vertical-align: middle;
+    margin-right: 10px;
 }
 .profile-game-rooms .game-image img {
 
@@ -450,6 +456,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 20px;
     padding: 20px;
     height: 50px;
@@ -458,6 +465,7 @@ body {
 .content-info h2 {
     color: aliceblue;
     font-size: 35px;
+    text-align: center;
 }
 
 
@@ -473,7 +481,7 @@ body {
     justify-content: center;
     /* Önceki hali buydu  ---> justify-content: space-evenly;  center ile değiştirdik.   */
     flex-wrap: wrap;
-    height: 85vh;
+    height: calc(100vh - 100px);
     overflow-y: scroll;
 }
 
@@ -608,13 +616,14 @@ body {
 
 /******** NAVBAR MOBILE *********/
 
-@media (min-width: 769px) {
+@media (min-width: 767px) {
     .hamburger {
         display: none;
     }
     .menu {
         display: flex;
     }
+
 }
 
 /****** HOME SLIDER MOBILE*******/
@@ -645,6 +654,12 @@ body {
     }
     .menu-container{
         margin: 0px 0px;
+    }
+
+    
+    .content-info h2 {
+
+      font-size: 15px;
     }
 }
 
@@ -730,6 +745,10 @@ body {
     .wrapper {
         margin: 20px;
     }
+    .content-info h2 {
+
+      font-size: 10px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -813,6 +832,30 @@ body {
 
     .wrapper {
         margin: 20px;
+    }
+
+    .main-container {
+
+      margin-left: 0px;
+    }
+
+    .profile-section {
+
+      display: none;
+    }
+
+    .game-section {
+
+      width: auto;
+    }
+
+    .content-info h2 {
+
+      font-size: 10px;
+    }
+
+    .sidebar {
+      display: none;
     }
 
 
