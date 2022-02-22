@@ -460,8 +460,9 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 0px;
     padding: 20px;
-    height: 50px;
+    height: 40px;
 }
 
 .content-info h2 {
@@ -491,7 +492,7 @@ body {
     justify-content: center;
     /* Önceki hali buydu  ---> justify-content: space-evenly;  center ile değiştirdik.   */
     flex-wrap: wrap;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     overflow-y: scroll;
 }
 
