@@ -267,181 +267,39 @@ body {
 
 .main-container {
 
-    display: block;
+    display: flex;
     margin-bottom: 0;  
     margin-left: 78px;  
-    margin-right: 80px;
 }
 
 .game-section {
 
+    width: calc(100% - 200px);
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
 
 
   
 }
-#game-section {
-  transition: margin-right .5s;
-}
 
+.profile-section {
 
-
-
-
-/******************     RIGHT SIDEBAR     *******************/
-.profile-main-section {
-  height: 100%;
-  width: 80px;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: transparent;
-  border-left: 0.5px solid #575757;
-  overflow-x: hidden;
-  overflow-y: auto;
-  transition: 0.4s;
-  padding-top: 10px;
-}
-.profile-section-1 {
-
-  margin-left:30px ;
-  padding: 0;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  transition: opacity 3s ease-in;
-
-  
-}
-
-#profile-section-1 {
-
-  transition: 1s;
-}
-
-.profile-main-section::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #575757;
-    
-}
-
-.profile-main-section::-webkit-scrollbar
-{
-	width: 4px;
-  margin-block: 15px;
-	background-color: #363535;
-    
-}
-
-.profile-main-section::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #8c5cf2;
-}
-
-.profile-main-section a {
-  padding: 15px 5px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.profile-main-section a:hover {
-  color: #f1f1f1;
-}
-
-.profile-main-section .closebtn {
-  display: none;
-  margin-top: 0px;
-  margin-bottom: -10px;
-  font-size: 20px;
-  text-align: center;
+    min-width: 200px;
+    height: 100vh;
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto;
+    border-left: 0.5px solid #575757; 
+    padding-top: 15px;
 
 }
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  padding: 8px 7px;
-  border: none;
-  
-}
-
-
-
-
-/**********MINI RIGHT SIDEBAR****************************/
-
-.mini-side-control{
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 5px;
-}
-.mini-side-control .mini-side-profile-image {
-
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
-  background-size: cover;
-  border-radius: 50%;
-}
-.mini-side-control .mini-side-game-image {
-
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-  background-size: cover;
-  border-radius: 50%;
-}
-
-.mini-side-control p {
-
-  display: block;
-  width: 100%;
-  max-width: 50px;
-  border-radius: 10px;
-  margin: 0 auto 10px;
-  margin-top: 15px;
-  padding: 5px 0;
-  text-align: center;
-  background: linear-gradient(265.82deg, rgba(28, 28, 28, 0.3) 17.01%, rgba(28, 28, 28, 0) 79.78%), #8C5CF2;
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.mini-side-control a {
-
-  margin: 0;
-  padding: 0;
-}
-.mini-side-control .mini-side-game-image:hover {
-
-  width: 45px;
-  height: 45px;
-  transition: 0.4s;
-
-
-
-}
-
-
 
 .profile-section::-webkit-scrollbar {
   display: none;
@@ -449,7 +307,7 @@ body {
 
 
 
-.profile-main-section .profile-info {
+.profile-section .profile-info {
 
     display: flex;
     flex-direction: column;
@@ -458,7 +316,7 @@ body {
     width: calc(100% - 30px);
     max-height: 250px;
     border-radius: 15px;
-    margin: 15px 0;
+    margin: 20px 0;
     padding-bottom: 10px;
     
 
@@ -467,7 +325,8 @@ body {
 
 
 
-.profile-main-section .profile-info .profile-image {
+
+.profile-section .profile-info .profile-image {
 
     width: 100px;
     height: 100px;
@@ -475,7 +334,7 @@ body {
     border-radius: 50%;
     margin-top: -60px;
 }
-.profile-main-section .profile-info .profile-name {
+.profile-section .profile-info .profile-name {
 
     margin: 0 auto 3px;
     text-align: center;
@@ -485,7 +344,7 @@ body {
     font-size: 15px;
     letter-spacing: 1px;
 }
-.profile-main-section .profile-info .profile-button {
+.profile-section .profile-info .profile-button {
 
     display: block;
     width: 100%;
@@ -502,7 +361,7 @@ body {
     
 }
 
-.profile-main-section .profile-info .profile-tag {
+.profile-section .profile-info .profile-tag {
 
     display: block;
     width: 100%;
@@ -520,7 +379,7 @@ body {
     
 }
 
-.profile-main-section .profile-info .profile-button:hover {
+.profile-section .profile-info .profile-button:hover {
 
     background-color: #734dc4;
     transition: 0.4s;
@@ -608,7 +467,7 @@ body {
 .content-info h2 {
     color: aliceblue;
     font-size: 25px;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 .content-info a {
@@ -927,7 +786,8 @@ img {
 /*****************************PROFILE CARD*******************************/
 
 .card {
-  margin: 20px 20px;
+  margin: 0px 20px;
+  margin-bottom: 20px;
   width: 250px;
   height: 400px;
   border-radius: 10px;
