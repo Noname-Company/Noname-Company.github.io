@@ -271,12 +271,14 @@ body {
     margin-bottom: 0;  
     margin-left: 78px;  
     margin-right: 80px;
+    
 }
 
 .game-section {
 
     display: flex;
     flex-wrap: wrap;
+    transition: margin-right .5s;
 
 
   
@@ -305,7 +307,7 @@ body {
   border-left: 0.5px solid #575757;
   overflow-x: hidden;
   overflow-y: auto;
-  transition: 0.4s;
+  transition: 0.5s;
   padding-top: 10px;
 }
 .profile-section-1 {
@@ -316,8 +318,6 @@ body {
   display: none;
   flex-direction: column;
   justify-content: center;
-  transition: opacity 3s ease-in;
-
   
 }
 
@@ -475,12 +475,42 @@ body {
     border-radius: 50%;
     margin-top: -60px;
 }
+
+.profile-main-section .profile-info .verified-icon {
+
+  color: #1466ff;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-right: -10px;
+}
+
+.profile-main-section .profile-info .emoji {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  color: #b8b8b8 ;
+  
+}
+.profile-main-section .profile-info .emoji .emoji-count {
+
+  margin-left: 15px;
+  font-size: 10px;
+}
+.profile-main-section .profile-info .emoji .emoji-count i {
+
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+
 .profile-main-section .profile-info .profile-name {
 
     margin: 0 auto 3px;
     text-align: center;
     padding: 12px 10px;
-    color: rgb(0, 183, 255);
+    color: #fff;
     text-decoration: none;
     font-size: 15px;
     letter-spacing: 1px;
@@ -770,7 +800,7 @@ img {
   min-width: 8.8rem;
   height: fit-content;
   color: #fff;
-
+  
   margin:20px;
   margin-top: 40px;
 }
@@ -866,7 +896,7 @@ img {
   transform: translateY(-25%) scale(0.8);
 }
 .game:hover .front .name {
-  animation: gameName 150ms forwards;
+  animation: gameName 200ms forwards;
 }
 .game:hover .front .status {
   opacity: 0;
