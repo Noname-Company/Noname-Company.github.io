@@ -798,6 +798,7 @@ img {
 .game {
   position: relative;
   width: 8.8rem;
+  min-width: 8.8rem;
   height: fit-content;
   color: #fff;
   
@@ -1378,24 +1379,69 @@ img {
 
     .content-info {
         margin-top: 20px;
+        margin-right: 20px;
         padding: 10px;
         height: 40px;
     }
 
     .content-info h2 {
-        color: aliceblue;
         font-size: 15px;
-}
+    }
+    .content-info a {
+      font-size: 10px;
+  }
+
     
     /************* CARD MOBILE ***********/
 
+    .wrapper, .wrapper2 {
 
-    .game {
-        width: 4.4rem;
+      margin: 5px 10px;
     }
 
-    .wrapper {
-        margin: 20px;
+    .wrapper2 {
+
+      height: 230px;
+    }
+    .game {
+
+      width: 4.4rem;
+      min-width: 4.4rem;
+      font-size: 0.6em;
+
+    }
+
+    .game .rank {
+
+      font-size: 0.8em;
+    }
+    .game .btn {
+
+      font-size: 0.8em;
+
+    }
+    .game .streamers img {
+      
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+
+    .game .back .game-stat {
+
+      font-size: 0.6em;
+    }
+    .game .back .game-stat span {
+
+      font-size: 0.4em;
+    }
+
+    .game:hover .back .streamer {
+      font-size: 0.4rem;
+    }
+
+    .scroll-arrow-left, .scroll-arrow-right {
+
+      display: none;
     }
 
     .main-container {
