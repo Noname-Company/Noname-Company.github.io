@@ -308,9 +308,12 @@ body {
   border-left: 0.5px solid #575757;
   overflow-x: hidden;
   overflow-y: auto;
-  transition: 0.5s;
   padding-top: 10px;
+  transition: margin-right 2s;
+
 }
+
+
 .profile-section-1 {
 
   margin-left:30px ;
@@ -319,13 +322,11 @@ body {
   display: none;
   flex-direction: column;
   justify-content: center;
+
   
 }
 
-#profile-section-1 {
 
-  transition: 1s;
-}
 
 .profile-main-section::-webkit-scrollbar-track
 {
@@ -406,7 +407,6 @@ body {
 
   width: 40px;
   height: 40px;
-  margin-bottom: 10px;
   background-size: cover;
   border-radius: 50%;
 }
@@ -432,10 +432,52 @@ body {
   margin: 0;
   padding: 0;
 }
-.mini-side-control .mini-side-game-image:hover {
 
-  width: 45px;
-  height: 45px;
+.mini-side-control .users {
+
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-side-control .users a {
+
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.mini-side-control .status-icons-green {
+
+  color: #02d11e;
+  font-size: 8px;
+  margin-left: -3px;
+
+}
+.mini-side-control .status-icons-red {
+
+  color: #d10202;
+  font-size: 8px;
+  margin-left: -3px;
+
+}
+.mini-side-control .status-icons-yellow {
+
+  color: #e7ff0d;
+  font-size: 8px;
+  margin-left: -3px;
+
+}
+
+
+
+.mini-side-control .users:hover {
+
+  transform: scale(1.1);
   transition: 0.4s;
 
 
@@ -516,6 +558,19 @@ body {
     font-size: 15px;
     letter-spacing: 1px;
 }
+
+
+
+.profile-main-section .profile-status-icon-green {
+
+  color: #02d11e;
+  font-size: 15px;
+  margin-top:-10px;
+}
+
+
+
+
 .profile-main-section .profile-info .profile-button {
 
     display: block;
@@ -600,6 +655,27 @@ body {
 
     display: inline-block;
 }
+.profile-game-rooms .game-image .status-icons-green {
+
+  color: #02d11e;
+  font-size: 8px;
+  margin-left: -10px;
+
+}
+.profile-game-rooms .game-image .status-icons-red {
+
+  color: #d10202;
+  font-size: 8px;
+  margin-left: -10px;
+
+}
+.profile-game-rooms .game-image .status-icons-yellow {
+
+  color: #e7ff0d;
+  font-size: 8px;
+  margin-left: -10px;
+
+}
 
 .profile-game-rooms .game-name {
 
@@ -610,10 +686,10 @@ body {
 }
 .profile-game-rooms .game-image img {
 
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin: 3px 10px;
+    margin: 3px 0px;
     vertical-align: middle;
 }
 .profile-game-rooms .game-name a {
@@ -1396,7 +1472,13 @@ img {
 
     .wrapper, .wrapper2 {
 
-      margin: 5px 10px;
+      margin: 5px 5px;
+    }
+
+    .wrapper::-webkit-scrollbar,
+    .wrapper-main::-webkit-scrollbar {
+
+      display: none;
     }
 
     .wrapper2 {
@@ -1446,8 +1528,7 @@ img {
 
     .main-container {
 
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0;
     }
 
     .game-section {
@@ -1461,10 +1542,15 @@ img {
     }
 
     .sidebar {
+
       display: none;
     }
+
     .profile-main-section {
+
       display: none;
+      background: linear-gradient(51.48deg, rgba(140, 92, 242, 0.2) -5.88%, rgba(0, 0, 0, 0) 62%), #1C1C1C;
+      
     }
 
 
