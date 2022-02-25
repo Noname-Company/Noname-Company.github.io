@@ -654,6 +654,8 @@ body {
 .profile-game-rooms .game-image .status-icons-green {
     color: #02d11e;
     font-size: 8px;
+    margin-left: -10px;
+
 }
 
 .profile-game-rooms .game-image .status-icons-red {
