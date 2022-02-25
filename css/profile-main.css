@@ -57,6 +57,8 @@ body {
     transition-delay: 0.1s;
     cursor: pointer;
     margin-left: 10px;
+    text-decoration: none;
+    /* LİNK İÇERİSİNDEKİ ALT ÇİZGİYİ KALDIRMAK İÇİN */
 }
 
 .sidebar.close .logo-details .logo_name {
@@ -311,14 +313,12 @@ body {
     margin-left: 78px;
     margin-right: 80px;
     transition: margin-right .7s;
-
 }
 
 .game-section {
     display: flex;
     flex-wrap: wrap;
     transition: margin-right .7s;
-
 }
 
 
@@ -923,7 +923,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #1c1c1c;
+    background: #1f1f1f;
     z-index: -1;
     transform: scale(0.2, 0.8);
     visibility: hidden;
