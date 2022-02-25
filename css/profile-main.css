@@ -7,6 +7,7 @@
 
 body {
     max-height: 100vh;
+    background: #000;
     background-size: cover;
 }
 
@@ -309,16 +310,15 @@ body {
     margin-bottom: 0;
     margin-left: 78px;
     margin-right: 80px;
+    transition: margin-right .7s;
+
 }
 
 .game-section {
     display: flex;
     flex-wrap: wrap;
-    transition: margin-right .5s;
-}
-
-#game-section {
     transition: margin-right .7s;
+
 }
 
 

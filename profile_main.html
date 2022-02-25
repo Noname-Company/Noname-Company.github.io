@@ -148,7 +148,7 @@
         </ul>
     </div>
 
-    <div class="main-container" id="game-section">
+    <div class="main-container" id="main-container">
        
 
         <div class="game-section" >
@@ -2174,28 +2174,25 @@
 
     <script>
         function openNav() {
-          document.getElementById("mySidebar").style.width = "250px";
-          document.getElementById("game-section").style.marginRight = "250px";
-          document.getElementById("closebtn").style.display="block";
-          document.getElementById("openbtn").style.display="none";
-
-          document.getElementById("profile-section-1").style.display="flex";
-          document.getElementById("mini-side-control").style.display="none";
-
-
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main-container").style.marginRight = "250px";
+            document.getElementById("closebtn").style.display="block";
+            document.getElementById("openbtn").style.display="none";
+            
+            setTimeout(() => {
+                document.getElementById("profile-section-1").style.display="flex";
+                document.getElementById("mini-side-control").style.display="none";
+            }, 500); // delay in milliseconds
         }
         
         function closeNav() {
-          document.getElementById("mySidebar").style.width = "80px";
-          document.getElementById("game-section").style.marginRight= "80px";
-          document.getElementById("closebtn").style.display="none";
-          document.getElementById("openbtn").style.display="block";
+            document.getElementById("mySidebar").style.width = "80px";
+            document.getElementById("main-container").style.marginRight= "80px";
+            document.getElementById("closebtn").style.display="none";
+            document.getElementById("openbtn").style.display="block";
 
-          document.getElementById("profile-section-1").style.display="none";
-          document.getElementById("mini-side-control").style.display="flex";
-
-
-
+            document.getElementById("profile-section-1").style.display="none";
+            document.getElementById("mini-side-control").style.display="flex";
         }
         </script>
 
