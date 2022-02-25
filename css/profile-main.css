@@ -891,7 +891,7 @@ img {
     top: 56%;
     left: 0;
     right: 0;
-    opacity: 0;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -926,7 +926,7 @@ img {
     background: #1c1c1c;
     z-index: -1;
     transform: scale(0.2, 0.8);
-    opacity: 0;
+    visibility: hidden;
     border-radius: 12px;
 }
 
@@ -939,11 +939,11 @@ img {
 }
 
 .game:hover .front .status {
-    opacity: 0;
+    visibility: hidden;
 }
 
 .game:hover .back {
-    opacity: 1;
+    visibility: visible;
 }
 
 .game:hover .back .streamers {
@@ -966,7 +966,7 @@ img {
 
 .game:hover .backgroundWrapper {
     transition: transform 200ms ease-in-out, opacity 100ms linear;
-    opacity: 1;
+    visibility: visible;
     transform: scale(1.4, 1.2);
 }
 
@@ -984,19 +984,19 @@ img {
 @keyframes gameName {
     0% {
         text-align: left;
-        opacity: 1;
+        visibility: visible;
     }
     20% {
         text-align: left;
-        opacity: 0;
+        visibility: hidden;
     }
     50% {
         text-align: center;
-        opacity: 0;
+        visibility: hidden;
     }
     100% {
         text-align: center;
-        opacity: 1;
+        visibility: visible;
     }
 }
 
