@@ -598,8 +598,8 @@ body {
     background: transparent;
     cursor: pointer;
     font-size: 15px;
+    margin: 5px 15px;
     margin-top: -30px;    
-    padding: 5px 15px;
 }
 
 
@@ -656,7 +656,11 @@ body {
     display: block;
     font-size: 12px;
   }
-  
+  .dropdown-content a i{
+    color: aliceblue;
+    margin-right: 10px;
+    font-size: 15px;
+  }
   .dropdown-content hr {
 
     background: #636262;
@@ -1667,7 +1671,8 @@ img {
         display: none;
     }
     .main-container {
-        margin: 0;
+        margin-right: 0;
+        margin-left: 0;
     }
     .game-section {
         width: auto;
