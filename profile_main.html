@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoName Company</title>
+    <title>Skeletton</title>
+    
     <link rel="stylesheet" href="css/profile-main.css">
     <link rel="stylesheet" href="css/icons.css">
 
@@ -18,7 +19,7 @@
 
 </head>
 
-<body style="background-color: #131313;">
+<body>
     <div class="sidebar close">
         <div class="logo-details">
             <img class="bx-menu" src="img/symbol.png" alt="">
@@ -1920,7 +1921,7 @@
                 </div>
                 <div class="users">
                     <a href=""><img class="mini-side-game-image" src="img/profile3.jpg" alt=""></a>
-                    <i class="bi bi-circle-fill status-icons-green"></i>
+                    <i class="bi bi-circle-fill status-icons-gray"></i>
                 </div>
 
 
@@ -1931,15 +1932,40 @@
             </div>
 
             <div class="profile-section-1" id="profile-section-1">
-                <div class="profile-info" style="margin-top: 70px; height: 150px;">
+                <div class="profile-info" style="margin-top: 70px;">
                     
-                    <div class="profile-image">
-                        <img src="img/profile.png" alt="">
+                    <div class="profile-top">
+                        <div class="profile-image">
+                            <img src="img/senel.jpg" alt="">
+                            <i class="bi bi-circle-fill profile-status-icon-green"></i>
+
+                        </div>
+
                     </div>
-                    <i class="bi bi-circle-fill profile-status-icon-green"></i>
+                    
+                    <div class="profile-buttons">
+                        <button><i class="bi bi-chat-right-dots-fill"></i><span class="message-span">25</span></button>
+                        <div class="profile-dropdown">
+                            <button onclick="myFunction()" class="dropbtn">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#home"><i class="bi bi-circle-fill dropdown-status-icons-green"></i>Çevrimiçi</a>
+                              <a href="#about"><i class="bi bi-circle-fill dropdown-status-icons-gray"></i>Çevrimdışı</a>
+                              <a href="#contact"><i class="bi bi-circle-fill dropdown-status-icons-yellow"></i>Uzakta</a>
+                              <a href="#contact"><i class="bi bi-circle-fill dropdown-status-icons-red"></i>Meşgul</a>
+                              <hr>
+                              <a href="#contact">Profil</a>
+                              <a href="#contact">İlanlar</a>
+
+                            </div>
+                          </div>
+                    </div>
+                    
 
 
                     <p class="profile-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+
 
                     <a href="" class="profile-button">Profili Düzenle</a>
 
@@ -2097,7 +2123,7 @@
                         <div class="profile-game-rooms">
                             <div class="game-image">
                                 <img src="./img/senel.jpg" alt="">
-                                <i class="bi bi-circle-fill status-icons-green"></i>
+                                <i class="bi bi-circle-fill status-icons-gray"></i>
                             </div>
 
                             <div class="game-name">
@@ -2115,6 +2141,27 @@
 
 
         </div>
+        <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName(".dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
         <script>
             function openNav() {
@@ -2165,30 +2212,30 @@
             const buttonLeft = document.getElementById('slideLeft');
 
             buttonRight.onclick = function() {
-                document.getElementById('wrapper2').scrollLeft += 180;
+                document.getElementById('wrapper2').scrollLeft += 540;
             };
             buttonLeft.onclick = function() {
-                document.getElementById('wrapper2').scrollLeft -= 180;
+                document.getElementById('wrapper2').scrollLeft -= 540;
             };
 
             const buttonRightHaber = document.getElementById('slideRightHaber');
             const buttonLeftHaber = document.getElementById('slideLeftHaber');
 
             buttonRightHaber.onclick = function() {
-                document.getElementById('wrapper-haber').scrollLeft += 180;
+                document.getElementById('wrapper-haber').scrollLeft += 540;
             };
             buttonLeftHaber.onclick = function() {
-                document.getElementById('wrapper-haber').scrollLeft -= 180;
+                document.getElementById('wrapper-haber').scrollLeft -= 540;
             };
 
             const buttonRightProfiles = document.getElementById('slideRightProfiles');
             const buttonLeftProfiles = document.getElementById('slideLeftProfiles');
 
             buttonRightProfiles.onclick = function() {
-                document.getElementById('wrapper-profiles').scrollLeft += 180;
+                document.getElementById('wrapper-profiles').scrollLeft += 540;
             };
             buttonLeftProfiles.onclick = function() {
-                document.getElementById('wrapper-profiles').scrollLeft -= 180;
+                document.getElementById('wrapper-profiles').scrollLeft -= 540;
             };
         </script>
 </body>

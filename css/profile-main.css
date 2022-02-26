@@ -7,7 +7,7 @@
 
 body {
     max-height: 100vh;
-    background: #000;
+    background: #131313;
     background-size: cover;
 }
 
@@ -485,6 +485,11 @@ body {
     font-size: 8px;
     margin-left: -3px;
 }
+.mini-side-control .status-icons-gray {
+    color: #bdbdbd;
+    font-size: 8px;
+    margin-left: -3px;
+}
 
 .mini-side-control .users:hover {
     transform: scale(1.1);
@@ -506,10 +511,18 @@ body {
     margin: 15px 0;
     padding-bottom: 10px;
 }
+.profile-main-section .profile-info .profile-top {
+
+    display: flex;
+
+}
+
 
 .profile-main-section .profile-info .profile-image {
 
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100px;
     height: 100px;
     background-size: cover;
@@ -530,12 +543,7 @@ body {
 
 
 
-.profile-main-section .profile-info .verified-icon {
-    color: #1466ff;
-    font-size: 15px;
-    padding-left: 10px;
-    margin-right: -10px;
-}
+
 
 .profile-main-section .profile-info .emoji {
     display: flex;
@@ -555,18 +563,149 @@ body {
     font-size: 15px;
 }
 
+/****PROFILE NAME AND VERIFIED ICON****/
 .profile-main-section .profile-info .profile-name {
-    margin: 0 auto 3px;
-    text-align: center;
-    padding: 12px 10px;
-    color: #fff;
+    padding: 12px 8px;
     text-decoration: none;
     font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+.profile-main-section .profile-info .verified-icon {
+    color: #1466ff;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+/****PROFILE BUTTONS****/
+
+
+.profile-main-section .profile-info .profile-buttons {
+    display: flex;
+    width: 200px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 
+
+.profile-main-section .profile-info .profile-buttons button {
+    display: flex;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: -30px;    
+    padding: 5px 15px;
+}
+
+
+.profile-main-section .profile-info .profile-buttons button .message-span {
+    color: #fff;
+    font-size: 9px;
+    margin-top: -10px;
+    margin-left: -5px;
+    padding: 3px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: #d60505;
+    
+}
+
+/*********DROPDOWN********/
+.profile-dropdown .dropbtn {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .profile-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1C1C1C;
+    border-radius: 10px;
+    margin-top: 15px;
+    min-width: 160px;
+    right: 5px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+  }
+  
+  .dropdown-content hr {
+
+    background: #636262;
+    border: .5px solid #636262;
+    margin: 5px 10px;
+  }
+  .dropdown-content a .dropdown-status-icons-green {
+
+    color: #02d11e;
+    margin-right: 10px;
+  }
+  .dropdown-content a .dropdown-status-icons-red {
+
+    color: #d11a02;
+    margin-right: 10px;
+  }
+  .dropdown-content a .dropdown-status-icons-yellow {
+
+    color: #fbff00;
+    margin-right: 10px;
+  }
+  .dropdown-content a .dropdown-status-icons-gray {
+
+    color: #bdbdbd;
+    margin-right: 10px;
+  }
+
+  
+  .dropdown-content a:hover {
+      
+    background-color: #363535;
+    }
+  
+  .show {display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /******PROFILE STATUS ICONS*******/
-.profile-main-section .profile-status-icon-green {
+.profile-top .profile-image .profile-status-icon-green {
     color: #02d11e;
     font-size: 15px;
     margin-top: -6px;
@@ -582,6 +721,11 @@ body {
   font-size: 15px;
   margin-top: -6px;
 }
+.profile-main-section .profile-status-icon-gray {
+    color: #bdbdbd;
+    font-size: 15px;
+    margin-top: -6px;
+  }
 
 .profile-main-section .profile-info .profile-button {
     display: block;
@@ -651,6 +795,7 @@ body {
     display: inline-block;
 }
 
+/*************SIDEBAR STATUS ICONS*******/
 .profile-game-rooms .game-image .status-icons-green {
     color: #02d11e;
     font-size: 8px;
@@ -666,6 +811,12 @@ body {
 
 .profile-game-rooms .game-image .status-icons-yellow {
     color: #e7ff0d;
+    font-size: 8px;
+    margin-left: -10px;
+}
+
+.profile-game-rooms .game-image .status-icons-gray {
+    color: #bdbdbd;
     font-size: 8px;
     margin-left: -10px;
 }
