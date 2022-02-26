@@ -342,36 +342,81 @@ body {
     transition: all .7s ease;
     background-color: transparent;
     border-left: 0.5px solid #575757;
-    overflow-x: hidden;
-    overflow-y: auto;
     padding-top: 10px;
 }
 
-.profile-section-1 {
+
+.large-side-control  {
     margin-left: 30px;
     padding: 0;
     width: 100%;
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-.profile-main-section::-webkit-scrollbar-track {
+.large-side-control::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     background-color: #575757;
 }
-
-.profile-main-section::-webkit-scrollbar {
+.large-side-control::-webkit-scrollbar {
     width: 4px;
     margin-block: 15px;
     background-color: #363535;
 }
 
-.profile-main-section::-webkit-scrollbar-thumb {
+.large-side-control::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #8c5cf2;
+}
+
+
+.profile-section-1{
+
+    margin-bottom: 20px;
+}
+.bottom-message-section {
+
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    background: #131313;
+    border-left: 0.5px solid #575757;
+    width: 250px;
+    height: 50px;
+}
+
+.bottom-message-section button {
+    display: flex;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+   
+}
+
+
+.bottom-message-section button .message-span {
+    color: #fff;
+    font-size: 9px;
+    margin-top: -10px;
+    margin-left: -5px;
+    padding: 3px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: #d60505;
+    
 }
 
 .profile-main-section a {
@@ -389,8 +434,8 @@ body {
 
 .profile-main-section .closebtn {
     display: none;
-    margin-top: 0px;
-    margin-bottom: -10px;
+    margin-top: -10px;
+    margin-bottom: -15px;
     font-size: 20px;
     text-align: center;
 }
@@ -496,6 +541,9 @@ body {
     transition: 0.4s;
 }
 
+
+
+/******PROFILE LARGE SIDEBAR***********/
 .profile-section::-webkit-scrollbar {
     display: none;
 }
@@ -510,10 +558,15 @@ body {
     border-radius: 15px;
     margin: 15px 0;
     padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 .profile-main-section .profile-info .profile-top {
 
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -10px;
+
 
 }
 
@@ -525,7 +578,7 @@ body {
     align-items: center;
     width: 100px;
     height: 100px;
-    background-size: cover;
+    object-fit: cover;
     border-radius: 50%;
     margin-top: -60px;
     box-shadow: 0 0 0 3px #8c5cf2, inset 0 0 0 5px #000, inset 0 0 0 5px #000, inset 0 0 0 5px #000, inset 0 0 0 5px #000;
@@ -536,13 +589,9 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-size: cover;
-
+  object-fit: cover;
 
 }
-
-
-
 
 
 .profile-main-section .profile-info .emoji {
@@ -584,8 +633,8 @@ body {
     display: flex;
     width: 200px;
     margin-top: 10px;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 
@@ -647,6 +696,7 @@ body {
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+
   }
   
   .dropdown-content a {
@@ -709,23 +759,23 @@ body {
 
 
 /******PROFILE STATUS ICONS*******/
-.profile-top .profile-image .profile-status-icon-green {
+.profile-top .profile-status-icon-green {
     color: #02d11e;
     font-size: 15px;
     margin-top: -6px;
 }
 
-.profile-main-section .profile-status-icon-red {
+.profile-top .profile-status-icon-red {
   color: #d11a02;
   font-size: 15px;
   margin-top: -6px;
 }
-.profile-main-section .profile-status-icon-yellow {
+.profile-top .profile-status-icon-yellow {
   color: #fbff00;
   font-size: 15px;
   margin-top: -6px;
 }
-.profile-main-section .profile-status-icon-gray {
+.profile-top .profile-status-icon-gray {
     color: #bdbdbd;
     font-size: 15px;
     margin-top: -6px;
@@ -1226,6 +1276,7 @@ img {
 
 .card .name {
     margin: auto;
+    margin-top: 10px;
     width: inherit;
     height: 40px;
     text-align: center;
