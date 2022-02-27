@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
 
 </head>
 
@@ -28,7 +29,7 @@
         <ul class="nav-links">
             <li>
                 <a href="index.html">
-                    <i class='bx bx-home'></i>
+                    <i class='bi bi-house-door'></i>
                     <span class="link_name">Ana Sayfa</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -2149,6 +2150,7 @@
                             
                             <div class="message-top">
                                 <a href="">Mesajlar</a>
+                                <button onclick="messageDropdown()" class="close-message-button" id="message-dropdown-content"><i class="bi bi-x-lg"></i></button>
                             </div>
                            
                             <div class="message-content">
@@ -2210,6 +2212,28 @@
 
                                     </div>
                                 </div>
+                                <div class="profile-message">
+                                    <div class="profile-image">
+                                        <img src="./img/profile.png" alt="">
+                                    </div>
+        
+                                    <div class="profile-name">
+                                        <a href="">Barış Şenel</a>
+                                        <p>Lorem ipsum dolor sit, amet consectetur</p>
+
+                                    </div>
+                                </div>
+                                <div class="profile-message">
+                                    <div class="profile-image">
+                                        <img src="./img/profile1.jpg" alt="">
+                                    </div>
+        
+                                    <div class="profile-name">
+                                        <a href="">Ahmet Bayram</a>
+                                        <p>Lorem ipsum dolor sit, amet consectetur</p>
+
+                                    </div>
+                                </div>
 
                                 
                             </div>
@@ -2242,6 +2266,7 @@
             function messageDropdown() {
             document.getElementById("message-dropdown-content").classList.toggle("show");
             }
+            
 
             // window.onclick = function(event) {
             // if (!event.target.matches('.message-dropbtn')) {

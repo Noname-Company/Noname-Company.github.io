@@ -758,7 +758,7 @@ body {
     background-color: #1C1C1C;
     margin-top: 15px;
     min-width: 350px;
-    height: 300px;
+    height: 400px;
     right: 0;
     bottom: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -769,7 +769,9 @@ body {
   .message-dropdown-content .message-top {
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    margin-bottom: 10px;
     border-top-left-radius:10px ;
     border-top-right-radius:10px ;
     height: 30px;
@@ -782,13 +784,14 @@ body {
     color: #fff;
     font-size: 12px;
   }
+
   
 
   .message-content {
     display: block;
     margin: 5px 10px;
     padding: 0;
-    height: 250px;
+    height: 350px;
     overflow-y: scroll;
 }
 
@@ -846,8 +849,8 @@ body {
 }
 .profile-message .profile-name p {
     color: aliceblue;
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-family:'Segoe UI', sans-serif;
 
     font-style: italic;
     font-weight: 100;
