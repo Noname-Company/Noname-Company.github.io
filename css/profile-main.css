@@ -787,7 +787,7 @@ body {
 
   
 
-  .message-content {
+  .message-dropdown-content .message-content {
     display: block;
     margin: 5px 10px;
     padding: 0;
@@ -800,19 +800,19 @@ body {
     margin-bottom: 10px;
 }
 
-.message-content::-webkit-scrollbar-track {
+.message-dropdown-content .message-content::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     background-color: #575757;
 }
 
-.message-content::-webkit-scrollbar {
+.message-dropdown-content .message-content::-webkit-scrollbar {
     width: 4px;
     margin-block: 15px;
     background-color: #363535;
 }
 
-.message-content::-webkit-scrollbar-thumb {
+.message-dropdown-content .message-content::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #8c5cf2;
@@ -857,15 +857,144 @@ body {
     margin-top: 5px;
     
 }
-
   
   .show {display: block;}
 
 
 
 
+/***************** DM*********************/
+  
+  .message-dm-dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #363636;
+    margin-top: 15px;
+    min-width: 350px;
+    height: 450px;
+    right: 0;
+    bottom: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+  }
 
 
+  .message-dm-dropdown-content .message-top {
+
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 30px;
+    margin-bottom: 10px;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    height: 40px;
+    align-items: center;
+    background: linear-gradient(265.82deg, rgba(28, 28, 28, 0.3) 17.01%, rgba(28, 28, 28, 0) 79.78%), #8C5CF2;
+    
+  }
+  .message-dm-dropdown-content .message-top .profile-image img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 3px 10px;
+    vertical-align: middle;
+}
+
+.message-dm-dropdown-content .message-top .profile-name {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.message-dm-dropdown-content .message-top .profile-name a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 12px;
+}
+.message-dm-dropdown-content .message-top .profile-name a .verified-icon {
+    
+    color: #fff;
+    font-size: 12px;
+    margin-left: 8px;
+
+} 
+
+
+/*****MESSAGE BOTTOM******/
+
+.message-dm-dropdown-content .message-bottom {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 10px;
+    background: #1C1C1C;
+    height: 40px;
+
+}
+.message-dm-dropdown-content .message-bottom form {
+
+    display: flex;
+    align-items: center;
+}
+.message-dm-dropdown-content .message-bottom button{
+
+    padding: 0 5px;
+
+}
+
+.message-dm-dropdown-content .message-bottom input{
+
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    font-family: 'Segoe UI';
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    color: #fff;
+    background: #2c2c2c;
+
+
+}
+
+.message-dm-dropdown-content .message-content {
+    display: block;
+    margin: 10px 10px;
+    padding: 0;
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.profile-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.message-dm-dropdown-content .message-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #575757;
+}
+
+.message-dm-dropdown-content .message-content::-webkit-scrollbar {
+    width: 4px;
+    margin-block: 15px;
+    background-color: #363535;
+}
+
+.message-dm-dropdown-content .message-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #8c5cf2;
+}
+
+  .show {display: block;}
 
 
 

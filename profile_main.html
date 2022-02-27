@@ -2160,7 +2160,7 @@
                                     </div>
         
                                     <div class="profile-name">
-                                        <a href="">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></a>
+                                        <a href="javascript:void(0)" onclick="messageDmDropdown()" >Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></a>
                                         <p>ilk mesaj</p>
                                     </div>
                                 </div>
@@ -2240,6 +2240,37 @@
 
 
                         </div>
+                        <div id="message-dm-dropdown-content" class="message-dm-dropdown-content">
+                            
+                            <div class="message-top">
+                                <button onclick="messageDmDropdown()" class="close-message-button" id="message-dm-dropdown-content"><i class="bi bi-arrow-90deg-left"></i></button>
+                                <div class="profile-image">
+                                    <img src="./img/senel.jpg" alt="">
+                                </div>
+    
+                                <div class="profile-name">
+                                    <a href="">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></a>
+                                </div>
+                                <!-- <button onclick="messageDmDropdown()" class="close-message-button" id="message-dm-dropdown-content"><i class="bi bi-x-lg"></i></button> -->
+                            </div>
+                           
+                            <div class="message-content">
+                                
+                                
+                            </div>
+
+                            <div class="message-bottom">
+                                <button><i class="bi bi-filetype-gif"></i></button>
+                                <button><i class="bi bi-image-fill"></i></button>
+
+                                <form action="">
+                                    <input type="text" placeholder="Bir mesaj yaz...">
+                                    <button type="submit"><i class="bi bi-send-fill"></i></button>
+                                </form>
+                            </div>
+
+
+                        </div>
                     </div>
 
                     <button><i class="bi bi-plus-square-fill"></i></button>
@@ -2266,7 +2297,13 @@
             function messageDropdown() {
             document.getElementById("message-dropdown-content").classList.toggle("show");
             }
+
+            function messageDmDropdown() {
+            document.getElementById("message-dm-dropdown-content").classList.toggle("show");
+            document.getElementById("message-dropdown-content").classList.toggle("show");
+
             
+            }
 
             // window.onclick = function(event) {
             // if (!event.target.matches('.message-dropbtn')) {
