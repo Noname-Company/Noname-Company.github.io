@@ -420,7 +420,6 @@ body {
 }
 
 .profile-main-section a {
-    padding: 15px 5px;
     text-decoration: none;
     font-size: 20px;
     color: #818181;
@@ -434,8 +433,7 @@ body {
 
 .profile-main-section .closebtn {
     display: none;
-    margin-top: -10px;
-    margin-bottom: -15px;
+   
     font-size: 20px;
     text-align: center;
 }
@@ -665,8 +663,8 @@ body {
     
 }
 
-/*********DROPDOWN********/
-.profile-dropdown .dropbtn {
+/*********TOP DROPDOWN********/
+.dropbtn {
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -692,7 +690,7 @@ body {
     border-radius: 10px;
     margin-top: 15px;
     min-width: 160px;
-    right: 5px;
+    right: 15px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -746,6 +744,119 @@ body {
   
   .show {display: block;}
 
+
+  /*********MESSAGE DROPDOWN********/
+
+  .message-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .message-dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #1C1C1C;
+    margin-top: 15px;
+    min-width: 350px;
+    height: 300px;
+    right: 0;
+    bottom: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+  }
+
+  .message-dropdown-content .message-top {
+
+    display: flex;
+    justify-content: center;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    height: 30px;
+    align-items: center;
+    background: linear-gradient(265.82deg, rgba(28, 28, 28, 0.3) 17.01%, rgba(28, 28, 28, 0) 79.78%), #8C5CF2;
+    
+  }
+  .message-dropdown-content .message-top  a{
+
+    color: #fff;
+    font-size: 12px;
+  }
+  
+
+  .message-content {
+    display: block;
+    margin: 5px 10px;
+    padding: 0;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.profile-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.message-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #575757;
+}
+
+.message-content::-webkit-scrollbar {
+    width: 4px;
+    margin-block: 15px;
+    background-color: #363535;
+}
+
+.message-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #8c5cf2;
+}
+
+
+
+
+.profile-message .profile-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 3px 20px;
+    vertical-align: middle;
+}
+
+.profile-message .profile-name {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.profile-message .profile-name a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 12px;
+}
+.profile-message .profile-name a .verified-icon {
+    
+    color: #1466ff;
+    font-size: 12px;
+    margin-left: 8px;
+}
+.profile-message .profile-name p {
+    color: aliceblue;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 5px;
+    
+}
+
+  
+  .show {display: block;}
 
 
 
@@ -847,6 +958,7 @@ body {
 
 .profile-game-rooms .game-image {
     display: inline-block;
+    margin-right: 5px;
 }
 
 /*************SIDEBAR STATUS ICONS*******/
