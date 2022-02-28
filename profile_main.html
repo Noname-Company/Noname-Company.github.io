@@ -2255,18 +2255,53 @@
                             </div>
                            
                             <div class="message-content">
-                                
+                                <div class="user-message">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ut esse neque incidunt fugit aliquid est debitis nobis. Ullam, iste?</p>
+                                    <span>23.57</span>
+                                </div>
+                                <div class="friend-message">
+                                    <p>iyi senden</p>
+                                    <span>23.57</span>
+                                </div>
+                                <div class="user-message">
+                                    <p>hacı naber</p>
+                                    <span>12.58</span>
+                                </div>
+                                <div class="friend-message">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ex.</p>
+                                    <span>23.57</span>
+                                </div>
+                                <div class="user-message">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <span>12.58</span>
+                                </div>
+                                <div class="friend-message">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <span>23.57</span>
+                                </div>
+                                <div class="user-message">
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <span>12.58</span>
+                                </div>
                                 
                             </div>
-
-                            <div class="message-bottom">
+                            
+                            
+                            <div class="message-extensions-dropdown-content" id="message-extensions-dropdown-content">
                                 <button><i class="bi bi-filetype-gif"></i></button>
                                 <button><i class="bi bi-image-fill"></i></button>
+                                <button><i class="bi bi-file-text-fill"></i></button>
+                                <button><i class="bi bi-mic-fill"></i></button>
+                                <button><i class="bi bi-emoji-smile-fill"></i></button>
+                            </div>
 
-                                <form action="">
-                                    <input type="text" placeholder="Bir mesaj yaz...">
-                                    <button type="submit"><i class="bi bi-send-fill"></i></button>
-                                </form>
+
+
+                            <div class="message-bottom">
+
+                                <button onclick="messageExtensionsDropdown()" class="extensions-button" id="extensions-button"><i class="bi bi-plus"></i></button>
+                                <input type="text" placeholder="Bir mesaj yaz...">
+                                <button type="submit"><i class="bi bi-send-fill"></i></button>
                             </div>
 
 
@@ -2301,8 +2336,12 @@
             function messageDmDropdown() {
             document.getElementById("message-dm-dropdown-content").classList.toggle("show");
             document.getElementById("message-dropdown-content").classList.toggle("show");
+            }
 
-            
+            function messageExtensionsDropdown() {
+            document.getElementById("message-extensions-dropdown-content").classList.toggle("extension-show");
+            document.getElementById("extensions-button").classList.toggle("extensions-button-animation");
+
             }
 
             // window.onclick = function(event) {

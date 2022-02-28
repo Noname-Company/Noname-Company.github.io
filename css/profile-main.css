@@ -934,21 +934,69 @@ body {
     height: 40px;
 
 }
-.message-dm-dropdown-content .message-bottom form {
 
-    display: flex;
-    align-items: center;
-}
 .message-dm-dropdown-content .message-bottom button{
 
     padding: 0 5px;
 
 }
 
+.message-dm-dropdown-content .message-bottom .extensions-button {
+
+    font-size: 20px;
+    background: #8c5cf2;
+    border-radius: 50%;
+    padding: 0 3px;
+    transition: 0.5s;
+}
+.message-dm-dropdown-content .message-bottom .extensions-button:hover {
+
+    background: #6d48be;
+  
+}
+.message-dm-dropdown-content .message-bottom .extensions-button-animation {
+
+    transform: rotate(45deg);
+
+    
+}
+
+
+.message-extensions-dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #1c1c1c;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    margin-top: 15px;
+    width: 350px;
+    height: 30px;
+    right: 0;
+    bottom: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+  }
+
+  .message-extensions-dropdown-content button {
+    
+    margin-right: 15px;
+    transition: 0.4s;
+
+  }
+
+  .message-extensions-dropdown-content button:hover {
+    
+    color: #8c5cf2;
+
+  }
+.extension-show {display: flex;}
+
 .message-dm-dropdown-content .message-bottom input{
 
     height: 30px;
-    width: 250px;
+    width: 100%;
     border-radius: 10px;
     margin: 0 10px;
     padding: 0 10px;
@@ -964,11 +1012,68 @@ body {
 }
 
 .message-dm-dropdown-content .message-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 10px 10px;
     padding: 0;
     height: 350px;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+.message-dm-dropdown-content .user-message {
+
+    align-self: flex-end;
+    background: linear-gradient(265.82deg, rgba(28, 28, 28, 0.3) 17.01%, rgba(28, 28, 28, 0) 79.78%), #8C5CF2;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: fit-content;
+    max-width: 180px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+.message-dm-dropdown-content .user-message p {
+
+    color: #fff;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+
+}
+.message-dm-dropdown-content .user-message span {
+
+    color: #1c1c1c;
+    font-family: 'Segoe UI';
+    font-size: 10px;
+
+}
+
+.message-dm-dropdown-content .friend-message {
+
+    align-items: flex-end;
+    background: linear-gradient(265.82deg, rgba(28, 28, 28, 0.3) 17.01%, rgba(28, 28, 28, 0) 79.78%), #5d5b61;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: fit-content;
+    max-width: 180px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+
+
+}
+.message-dm-dropdown-content .friend-message p {
+
+    color: #fff;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+
+}
+.message-dm-dropdown-content .friend-message span {
+
+    color: #1c1c1c;
+    font-family: 'Segoe UI';
+    font-size: 10px;
+
 }
 
 .profile-message {
@@ -986,6 +1091,7 @@ body {
     width: 4px;
     margin-block: 15px;
     background-color: #363535;
+    display: none;
 }
 
 .message-dm-dropdown-content .message-content::-webkit-scrollbar-thumb {
