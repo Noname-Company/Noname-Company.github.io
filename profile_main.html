@@ -2243,13 +2243,18 @@
                             
                             <div class="message-top">
                                 <button onclick="messageDmDropdown()" class="close-message-button" id="message-dm-dropdown-content"><i class="bi bi-arrow-90deg-left"></i></button>
-                                <div class="profile-image">
-                                    <img src="./img/senel.jpg" alt="">
+                                <div class="profile-holder">
+                                    <div class="profile-image">
+                                        <img src="./img/senel.jpg" alt="">
+                                    </div>
+                                    <div class="profile-name">
+                                        <a href="">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></a>
+                                    </div>
                                 </div>
-    
-                                <div class="profile-name">
-                                    <a href="">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></a>
-                                </div>
+                                
+                                
+                                <button onclick="messageDmDropdownClose()" class="close-dm-message-button" ><i class="bi bi-x-lg"></i></button>
+                                
                             </div>
                            
                             <div class="message-content" id="message-content">
@@ -2369,6 +2374,9 @@
             function messageDmDropdown() {
             document.getElementById("message-dm-dropdown-content").classList.toggle("show");
             document.getElementById("message-dropdown-content").classList.toggle("show");
+            }
+            function messageDmDropdownClose() {
+            document.getElementById("message-dm-dropdown-content").classList.toggle("show");
             }
 
             function messageExtensionsDropdown() {

@@ -550,7 +550,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(227.26deg, rgba(139, 133, 133, 0.2) -9.44%, rgba(22, 22, 22, 0) 79.65%), #161616;
+    background: #1f1f1f;
     width: calc(100% - 30px);
     max-height: 250px;
     border-radius: 15px;
@@ -897,16 +897,32 @@ body {
   .message-dm-dropdown-content .message-top {
 
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     padding: 5px 30px;
     margin-bottom: 10px;
     border-top-left-radius:10px ;
     border-top-right-radius:10px ;
     height: 40px;
-    align-items: center;
     background: linear-gradient(265.82deg, rgba(28, 28, 28, 0.3) 17.01%, rgba(28, 28, 28, 0) 79.78%), #8C5CF2;
     
   }
+
+  .message-dm-dropdown-content .message-top .profile-holder{
+
+    display: flex;
+    align-items: center;
+    
+    
+  }
+
+  .close-dm-message-button {
+
+    margin-left: 100px;
+  }
+
+
+
   .message-dm-dropdown-content .message-top .profile-image img {
     width: 30px;
     height: 30px;
