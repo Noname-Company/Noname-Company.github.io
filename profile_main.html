@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skeletton</title>
     
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/profile-main.css">
     <link rel="stylesheet" href="css/icons.css">
 
@@ -181,7 +184,7 @@
                                 </div>
                                 <div class="back">
                                     <div class="streaming-info">
-                                        <p class="game-stat">174.4k <span>Katılımcı</span></p>
+                                        <p class="game-stat">174.4k<span>Katılımcı</span></p>
                                         <p class="game-stat">3,172<span>Streams</span></p>
                                     </div>
                                     <button class="btn">Katıl</button>
@@ -1579,7 +1582,7 @@
                         <button class="scroll-arrow-left" id="slideLeftProfiles" type="button"><i class="bi bi-caret-left-fill"></i></button>
 
                         <div class="wrapper2" id="wrapper-profiles" style="height: 450px;">
-                            <div class="card">
+                            <div class="profile-card">
                                 <div class="ds-top"></div>
                                 <div class="avatar-holder">
                                     <img src="img/senel.jpg" alt="Albert Einstein">
@@ -1627,7 +1630,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="profile-card">
                                 <div class="ds-top"></div>
                                 <div class="avatar-holder">
                                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1820405/profile/profile-512.jpg?1533058950" alt="Albert Einstein">
@@ -1675,7 +1678,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="profile-card">
                                 <div class="ds-top"></div>
                                 <div class="avatar-holder">
                                     <img src="img/profile3.jpg" alt="Albert Einstein">
@@ -1723,7 +1726,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="profile-card">
                                 <div class="ds-top"></div>
                                 <div class="avatar-holder">
                                     <img src="img/profile2.jpg" alt="Albert Einstein">
@@ -1771,7 +1774,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="profile-card">
                                 <div class="ds-top"></div>
                                 <div class="avatar-holder">
                                     <img src="img/profile1.jpg" alt="Albert Einstein">
@@ -1819,7 +1822,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="profile-card">
                                 <div class="ds-top"></div>
                                 <div class="avatar-holder">
                                     <img src="img/profile.png" alt="Albert Einstein">
@@ -2154,84 +2157,80 @@
                             </div>
                            
                             <div class="message-content">
-                                <div class="profile-message">
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
                                     <div class="profile-image">
                                         <img src="./img/senel.jpg" alt="">
                                     </div>
         
                                     <div class="profile-name">
-                                        <a href="javascript:void(0)" onclick="messageDmDropdown()" >Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></a>
-                                        <p>ilk mesaj</p>
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
                                     </div>
                                 </div>
 
-                                <div class="profile-message">
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
                                     <div class="profile-image">
-                                        <img src="./img/profile1.jpg" alt="">
+                                        <img src="./img/senel.jpg" alt="">
                                     </div>
         
                                     <div class="profile-name">
-                                        <a href="">Bilge Kaan Gürgen</a>
-                                        <p>naber nasıl gidiyor</p>
-
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
                                     </div>
                                 </div>
 
-                                <div class="profile-message">
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
                                     <div class="profile-image">
-                                        <img src="./img/profile2.jpg" alt="">
+                                        <img src="./img/senel.jpg" alt="">
                                     </div>
         
                                     <div class="profile-name">
-                                        <a href="">Süleyman Karakoç</a>
-                                        <p>Lorem ipsum dolor sit amet</p>
-
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
                                     </div>
                                 </div>
 
-                                <div class="profile-message">
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
                                     <div class="profile-image">
-                                        <img src="./img/profile1.jpg" alt="">
+                                        <img src="./img/senel.jpg" alt="">
                                     </div>
         
                                     <div class="profile-name">
-                                        <a href="">Berat Maviş</a>
-                                        <p>Lorem ipsum dolor sit amet</p>
-
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
                                     </div>
                                 </div>
 
-                                <div class="profile-message">
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
                                     <div class="profile-image">
-                                        <img src="./img/profile3.jpg" alt="">
+                                        <img src="./img/senel.jpg" alt="">
                                     </div>
         
                                     <div class="profile-name">
-                                        <a href="">Bilge Kaan Gürgen</a>
-                                        <p>Lorem ipsum dolor sit, amet consectetur</p>
-
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
                                     </div>
                                 </div>
-                                <div class="profile-message">
+                                
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
                                     <div class="profile-image">
-                                        <img src="./img/profile.png" alt="">
+                                        <img src="./img/senel.jpg" alt="">
                                     </div>
         
                                     <div class="profile-name">
-                                        <a href="">Barış Şenel</a>
-                                        <p>Lorem ipsum dolor sit, amet consectetur</p>
-
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
                                     </div>
                                 </div>
-                                <div class="profile-message">
+
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
                                     <div class="profile-image">
-                                        <img src="./img/profile1.jpg" alt="">
+                                        <img src="./img/senel.jpg" alt="">
                                     </div>
         
                                     <div class="profile-name">
-                                        <a href="">Ahmet Bayram</a>
-                                        <p>Lorem ipsum dolor sit, amet consectetur</p>
-
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
                                     </div>
                                 </div>
 
@@ -2251,37 +2250,68 @@
                                 <div class="profile-name">
                                     <a href="">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></a>
                                 </div>
-                                <!-- <button onclick="messageDmDropdown()" class="close-message-button" id="message-dm-dropdown-content"><i class="bi bi-x-lg"></i></button> -->
                             </div>
                            
-                            <div class="message-content">
+                            <div class="message-content" id="message-content">
                                 <div class="user-message">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ut esse neque incidunt fugit aliquid est debitis nobis. Ullam, iste?</p>
-                                    <span>23.57</span>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button><i class="bi bi-three-dots-vertical"></i></button>
+                                    </div>
                                 </div>
                                 <div class="friend-message">
                                     <p>iyi senden</p>
-                                    <span>23.57</span>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button><i class="bi bi-three-dots-vertical"></i></button>
+                                    </div>
                                 </div>
                                 <div class="user-message">
                                     <p>hacı naber</p>
-                                    <span>12.58</span>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button><i class="bi bi-three-dots-vertical"></i></button>
+                                    </div>
                                 </div>
                                 <div class="friend-message">
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ex.</p>
-                                    <span>23.57</span>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button><i class="bi bi-three-dots-vertical"></i></button>
+                                    </div>
                                 </div>
                                 <div class="user-message">
                                     <p>Lorem ipsum dolor sit amet.</p>
-                                    <span>12.58</span>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button><i class="bi bi-three-dots-vertical"></i></button>
+                                    </div>
                                 </div>
                                 <div class="friend-message">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <span>23.57</span>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button type="button" id="message-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="message-features">
+                                            <a href=""><i class="bi bi-trash-fill"></i> Mesajı Sil</a>
+                                            <a href=""><i class="bi bi-reply-fill"></i> Cevapla</a>
+                                            <a href=""><i class="bi bi-forward-fill"></i> Yönlendir</a>
+                                        </div>
+                                    </div>
                                 </div>
+
                                 <div class="user-message">
                                     <p>Lorem, ipsum dolor.</p>
-                                    <span>12.58</span>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button type="button" id="message-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="message-features">
+                                            <a href=""><i class="bi bi-trash-fill"></i> Mesajı Sil</a>
+                                            <a href=""><i class="bi bi-reply-fill"></i> Cevapla</a>
+                                            <a href=""><i class="bi bi-forward-fill"></i> Yönlendir</a>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -2300,7 +2330,10 @@
                             <div class="message-bottom">
 
                                 <button onclick="messageExtensionsDropdown()" class="extensions-button" id="extensions-button"><i class="bi bi-plus"></i></button>
-                                <input type="text" placeholder="Bir mesaj yaz...">
+                                <div class="message-input-group">
+                                    <input type="text" placeholder="Bir mesaj yaz...">
+                                    <button type="submit"><i class="bi bi-emoji-smile-fill"></i></button>
+                                </div>
                                 <button type="submit"><i class="bi bi-send-fill"></i></button>
                             </div>
 
@@ -2343,6 +2376,10 @@
             document.getElementById("extensions-button").classList.toggle("extensions-button-animation");
 
             }
+
+            let objDiv = document.getElementById("message-content");
+                objDiv.scrollTop = objDiv.scrollHeight;
+            
 
             // window.onclick = function(event) {
             // if (!event.target.matches('.message-dropbtn')) {
@@ -2431,6 +2468,7 @@
                 document.getElementById('wrapper-profiles').scrollLeft -= 540;
             };
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

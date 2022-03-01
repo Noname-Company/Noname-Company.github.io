@@ -757,11 +757,11 @@ body {
     position: fixed;
     background-color: #1C1C1C;
     margin-top: 15px;
+    border-radius: 15px;
     min-width: 350px;
     height: 400px;
-    right: 0;
+    right: 20px;
     bottom: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 
   }
@@ -789,7 +789,7 @@ body {
 
   .message-dropdown-content .message-content {
     display: block;
-    margin: 5px 10px;
+    margin: 5px 0;
     padding: 0;
     height: 350px;
     overflow-y: scroll;
@@ -798,6 +798,7 @@ body {
 .profile-message {
     display: flex;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .message-dropdown-content .message-content::-webkit-scrollbar-track {
@@ -819,6 +820,17 @@ body {
 }
 
 
+.profile-message{
+
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.profile-message:hover {
+
+    transition: 0.3s;
+    background: #3a3a3a;
+}
 
 
 .profile-message .profile-image img {
@@ -834,27 +846,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    
 
 }
-.profile-message .profile-name a {
-    text-decoration: none;
+.profile-message .profile-name .message-send-name {
     color: aliceblue;
     font-size: 12px;
+    margin-bottom: -2px;
 }
-.profile-message .profile-name a .verified-icon {
+.profile-message .profile-name .message-send-name .verified-icon {
     
     color: #1466ff;
     font-size: 12px;
     margin-left: 8px;
 }
-.profile-message .profile-name p {
+.profile-message .profile-name .message-send-content {
     color: aliceblue;
     font-size: 12px;
     font-family:'Segoe UI', sans-serif;
-
+    margin-bottom: -2px;
     font-style: italic;
     font-weight: 100;
-    margin-top: 5px;
     
 }
   
@@ -870,9 +883,10 @@ body {
     position: fixed;
     background-color: #363636;
     margin-top: 15px;
+    border-radius: 15px;
     min-width: 350px;
     height: 450px;
-    right: 0;
+    right: 20px;
     bottom: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -931,7 +945,7 @@ body {
     justify-content: flex-start;
     padding: 0px 10px;
     background: #1C1C1C;
-    height: 40px;
+    min-height: 40px;
 
 }
 
@@ -946,7 +960,7 @@ body {
     font-size: 20px;
     background: #8c5cf2;
     border-radius: 50%;
-    padding: 0 3px;
+    padding: 0 5px;
     transition: 0.5s;
 }
 .message-dm-dropdown-content .message-bottom .extensions-button:hover {
@@ -972,9 +986,8 @@ body {
     margin-top: 15px;
     width: 350px;
     height: 30px;
-    right: 0;
+    right: 20px;
     bottom: 90px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 
   }
@@ -993,11 +1006,21 @@ body {
   }
 .extension-show {display: flex;}
 
+
+
+.message-dm-dropdown-content .message-bottom .message-input-group {
+
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+
 .message-dm-dropdown-content .message-bottom input{
 
     height: 30px;
+    min-height: 30px;
     width: 100%;
-    border-radius: 10px;
     margin: 0 10px;
     padding: 0 10px;
     outline: none;
@@ -1006,10 +1029,16 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
     color: #fff;
-    background: #2c2c2c;
+    background: transparent;
 
 
 }
+
+.message-dm-dropdown-content .message-bottom textarea::-webkit-scrollbar{
+
+    display: none;
+}
+
 
 .message-dm-dropdown-content .message-content {
     display: flex;
@@ -1039,12 +1068,23 @@ body {
     font-size: 12px;
 
 }
-.message-dm-dropdown-content .user-message span {
+.message-dm-dropdown-content .user-message .message-features {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.message-dm-dropdown-content .user-message .message-features span {
 
     color: #1c1c1c;
     font-family: 'Segoe UI';
     font-size: 10px;
+}
+.message-dm-dropdown-content .message-features button {
 
+   
+    font-size: 10px;
 }
 
 .message-dm-dropdown-content .friend-message {
@@ -1068,12 +1108,18 @@ body {
     font-size: 12px;
 
 }
-.message-dm-dropdown-content .friend-message span {
+.message-dm-dropdown-content .friend-message .message-features {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.message-dm-dropdown-content .friend-message .message-features span {
 
     color: #1c1c1c;
     font-family: 'Segoe UI';
     font-size: 10px;
-
 }
 
 .profile-message {
@@ -1103,7 +1149,32 @@ body {
   .show {display: block;}
 
 
+/************ MESSAGE FEATURES DROPDOWN*************/
+.message-features-dropdown {
 
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    min-width: 100px;
+
+    
+}
+.message-features-dropdown a {
+
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    padding: 5px 8px;
+}
+.message-features-dropdown a:hover {
+
+    background: #2e2e2e;
+}
+
+.message-features-dropdown a i{
+
+    margin-right: 8px;
+  
+}
 
 
 
@@ -1300,8 +1371,9 @@ body {
     padding: 0px 10px;
     /* Önceki hali buydu  ---> justify-content: space-evenly;  center ile değiştirdik.   */
     flex-wrap: nowrap;
-    height: 360px;
+    height: 380px;
     overflow-x: scroll;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
@@ -1483,6 +1555,7 @@ img {
 }
 
 .back .streaming-info {
+    
     columns: 2;
     column-rule: 1px solid rgba(255, 255, 255, 0.6);
 }
@@ -1499,6 +1572,9 @@ img {
 
 .back .streamers {
     display: flex;
+}
+.back .streamers .number {
+    margin-top: -15px;
 }
 
 .backgroundWrapper {
@@ -1587,7 +1663,7 @@ img {
 
 /*****************************PROFILE CARD*******************************/
 
-.card {
+.profile-card {
     margin: 20px 20px;
     width: 250px;
     height: 400px;
@@ -1596,7 +1672,7 @@ img {
     background: #151515;
 }
 
-.card .ds-top {
+.profile-card .ds-top {
     margin: auto;
     width: 250px;
     height: 50px;
@@ -1606,7 +1682,7 @@ img {
     animation: dsTop 1.5s;
 }
 
-.card .avatar-holder {
+.profile-card .avatar-holder {
     margin: auto;
     width: 100px;
     height: 100px;
@@ -1617,14 +1693,14 @@ img {
     animation: mvTop 1.5s;
 }
 
-.card .avatar-holder img {
+.profile-card .avatar-holder img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.card .name {
+.profile-card .name {
     margin: auto;
     margin-top: 10px;
     width: inherit;
@@ -1633,25 +1709,25 @@ img {
     animation: fadeIn 2s ease-in;
 }
 
-.card .name a {
+.profile-card .name a {
     color: white;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
 }
 
-.card .name a:hover {
+.profile-card .name a:hover {
     text-decoration: underline;
     color: #8C5CF2;
 }
 
-.card .name h6 {
+.profile-card .name h6 {
     margin: auto;
     color: white;
     width: 40px;
 }
 
-.card .button {
+.profile-card .button {
     margin: auto;
     padding: 8px;
     width: inherit;
@@ -1661,7 +1737,7 @@ img {
     outline: none;
 }
 
-.card .button a {
+.profile-card .button a {
     padding: 5px 20px;
     border-radius: 10px;
     color: white;
@@ -1672,21 +1748,21 @@ img {
     transition: all 1s;
 }
 
-.card .button a:hover {
+.profile-card .button a:hover {
     color: white;
     background: #6c4fac;
 }
 
-.card .ds-info {
+.profile-card .ds-info {
     margin: auto;
     width: inherit;
     height: 40px;
     display: flex;
 }
 
-.card .ds-info .pens,
-.card .ds-info .projects,
-.card .ds-info .posts {
+.profile-card .ds-info .pens,
+.profile-card .ds-info .projects,
+.profile-card .ds-info .posts {
     position: relative;
     width: calc(250px / 3);
     text-align: center;
@@ -1695,42 +1771,43 @@ img {
     animation-fill-mode: forwards;
 }
 
-.card .ds-info .pens h6,
-.card .ds-info .projects h6,
-.card .ds-info .posts h6 {
+.profile-card .ds-info .pens h6,
+.profile-card .ds-info .projects h6,
+.profile-card .ds-info .posts h6 {
     text-transform: uppercase;
+    font-size: 10px;
     color: #8C5CF2;
 }
 
-.card .ds-info .pens p,
-.card .ds-info .projects p,
-.card .ds-info .posts p {
+.profile-card .ds-info .pens p,
+.profile-card .ds-info .projects p,
+.profile-card .ds-info .posts p {
     font-size: 12px;
 }
 
-.card .ds-info .ds:nth-of-type(2) {
+.profile-card .ds-info .ds:nth-of-type(2) {
     animation-delay: 0.5s;
 }
 
-.card .ds-info .ds:nth-of-type(1) {
+.profile-card .ds-info .ds:nth-of-type(1) {
     animation-delay: 1s;
 }
 
-.card .ds-skill {
+.profile-card .ds-skill {
     margin: auto;
     width: 200px;
     height: 100px;
     animation: mvBottom 1.5s;
 }
 
-.card .ds-skill h6 {
+.profile-card .ds-skill h6 {
     margin-bottom: 5px;
     font-weight: 700;
     text-transform: uppercase;
     color: #8C5CF2;
 }
 
-.card .ds-skill .skill h6 {
+.profile-card .ds-skill .skill h6 {
     font-weight: 400;
     font-size: 8px;
     letter-spacing: 0.05em;
@@ -1738,41 +1815,41 @@ img {
     color: white;
 }
 
-.card .ds-skill .skill .fab {
+.profile-card .ds-skill .skill .fab {
     color: #8C5CF2;
     font-size: 14px;
 }
 
-.card .ds-skill .skill .bar {
+.profile-card .ds-skill .skill .bar {
     height: 5px;
     background: #8C5CF2;
     text-align: right;
 }
 
-.card .ds-skill .skill .bar p {
+.profile-card .ds-skill .skill .bar p {
     color: white;
     font-size: 8px;
     padding-top: 5px;
     animation: fadeIn 5s;
 }
 
-.card .ds-skill .skill .bar:hover {
+.profile-card .ds-skill .skill .bar:hover {
     background: white;
 }
 
-.card .ds-skill .skill .bar-html {
+.profile-card .ds-skill .skill .bar-html {
     width: 95%;
     animation: htmlSkill 1s;
     animation-delay: 0.4s;
 }
 
-.card .ds-skill .skill .bar-css {
+.profile-card .ds-skill .skill .bar-css {
     width: 90%;
     animation: cssSkill 2s;
     animation-delay: 0.4s;
 }
 
-.card .ds-skill .skill .bar-js {
+.profile-card .ds-skill .skill .bar-js {
     width: 75%;
     animation: jsSkill 3s;
     animation-delay: 0.4s;
