@@ -2072,6 +2072,134 @@ img {
 }
 
 
+
+/***************************** İLAN CARD*********************************/
+
+.ilan-card {
+    background: #1f1f1f;
+    border-radius: 4px;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+    min-width: 550px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .ilan-card .title-total {
+    padding: 2.5em 1.5em 1.5em 1.5em;
+    height: 280px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  .ilan-card h5 {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0 1rem;
+    color: #fff;
+  }
+  .ilan-card .username {
+    margin: 0;
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 0 1rem;
+    color: #fff;
+  }
+  .ilan-card .title {
+    padding: 0.1rem;
+    text-align: right;
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .ilan-card .title span {
+    background: #8c5cf2;
+    padding: 5px 12px;
+    border-radius: 15px;
+  }
+  
+  .ilan-card .desc {
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    font-family: "Segoe UI", sans-serif;
+    color: #fff;
+  }
+  .ilan-card .actions {
+    display:flex;
+    justify-content:space-around;
+    padding: 0.5rem 1rem;
+  }
+  
+  .ilan-card .img-avatar {
+    width: 106px;
+    height: 106px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color:  #8c5cf2;
+  
+    top: 15px;
+    left: 160px;
+    object-fit: cover;
+  }
+  .ilan-card .img-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+    }
+  
+  .ilan-card .card-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  
+  
+  .ilan-card .portada {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 240px;
+    height: 280px;
+  }
+  
+  .ilan-card .portada img {
+    width: 210px;
+    height: 280px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .ilan-card button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #8c5cf2;
+    cursor: pointer;
+    transition: 0.5s;
+
+  }
+.ilan-card button:hover {
+      color: #9c5cf4;
+      transform: scale(1.1);
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
 /************** FOOTER*****************/
 
 .index-footer {
