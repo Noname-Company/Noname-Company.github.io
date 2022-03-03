@@ -1816,7 +1816,6 @@ img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: #8C5CF2;
-    animation: dsTop 1.5s;
 }
 
 .profile-card .avatar-holder {
@@ -1827,7 +1826,6 @@ img {
     border-radius: 50%;
     box-shadow: 0 0 0 5px #151515, inset 0 0 0 5px #000, inset 0 0 0 5px #000, inset 0 0 0 5px #000, inset 0 0 0 5px #000;
     background: white;
-    animation: mvTop 1.5s;
 }
 
 .profile-card .avatar-holder img {
@@ -1843,7 +1841,6 @@ img {
     width: inherit;
     height: 40px;
     text-align: center;
-    animation: fadeIn 2s ease-in;
 }
 
 .profile-card .name a {
@@ -1870,7 +1867,6 @@ img {
     width: inherit;
     height: 40px;
     text-align: center;
-    animation: fadeIn 2s ease-in;
     outline: none;
 }
 
@@ -1882,7 +1878,6 @@ img {
     text-decoration: none;
     font-size: 10px;
     background: #8C5CF2;
-    transition: all 1s;
 }
 
 .profile-card .button a:hover {
@@ -1901,19 +1896,18 @@ img {
 .profile-card .ds-info .projects,
 .profile-card .ds-info .posts {
     position: relative;
+    margin-top: 5px;
     width: calc(250px / 3);
     text-align: center;
     color: white;
-    animation: fadeInMove 2s;
-    animation-fill-mode: forwards;
 }
 
 .profile-card .ds-info .pens h6,
 .profile-card .ds-info .projects h6,
 .profile-card .ds-info .posts h6 {
-    text-transform: uppercase;
-    font-size: 10px;
-    color: #8C5CF2;
+    font-size: 15px;
+    margin-bottom: -2px;
+    color: #747474;
 }
 
 .profile-card .ds-info .pens p,
@@ -1932,65 +1926,42 @@ img {
 
 .profile-card .ds-skill {
     margin: auto;
+    margin-top: 5px;
     width: 200px;
     height: 100px;
-    animation: mvBottom 1.5s;
 }
 
 .profile-card .ds-skill h6 {
     margin-bottom: 5px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 500;
     text-transform: uppercase;
-    color: #8C5CF2;
 }
 
-.profile-card .ds-skill .skill h6 {
-    font-weight: 400;
-    font-size: 8px;
-    letter-spacing: 0.05em;
-    margin: 4px 0;
-    color: white;
+.profile-card .skill-container {
+    display: flex;
+    align-items: baseline;
+
 }
 
-.profile-card .ds-skill .skill .fab {
-    color: #8C5CF2;
-    font-size: 14px;
+.profile-card .skill-container:nth-child(1) {
+    margin-top: 15px;
+
 }
 
-.profile-card .ds-skill .skill .bar {
-    height: 5px;
-    background: #8C5CF2;
-    text-align: right;
+.profile-card .skill-container h6 {
+    font-size: 12px;
+    margin-right: 10px;
+    color: #8c5cf2;
+
+}
+.profile-card .skill-container p {
+    font-size: 12px;
+    color: #fff;
+
 }
 
-.profile-card .ds-skill .skill .bar p {
-    color: white;
-    font-size: 8px;
-    padding-top: 5px;
-    animation: fadeIn 5s;
-}
 
-.profile-card .ds-skill .skill .bar:hover {
-    background: white;
-}
-
-.profile-card .ds-skill .skill .bar-html {
-    width: 95%;
-    animation: htmlSkill 1s;
-    animation-delay: 0.4s;
-}
-
-.profile-card .ds-skill .skill .bar-css {
-    width: 90%;
-    animation: cssSkill 2s;
-    animation-delay: 0.4s;
-}
-
-.profile-card .ds-skill .skill .bar-js {
-    width: 75%;
-    animation: jsSkill 3s;
-    animation-delay: 0.4s;
-}
 
 @keyframes fadeInMove {
     0% {
@@ -2078,7 +2049,6 @@ img {
 .ilan-card {
     background: #1f1f1f;
     border-radius: 4px;
-    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
     min-width: 550px;
     height: 280px;
     display: flex;
