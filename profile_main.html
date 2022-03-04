@@ -24,7 +24,7 @@
 </head>
 
 <body style="background-image: url(img/anasayfabg.png);">
-    <div class="sidebar close">
+    <div class="main-sidebar closee">
         <div class="logo-details">
             <img class="bx-menu" src="img/symbol.png" alt="">
             <a href="#" class="logo_name">Skeletton</a>
@@ -1918,11 +1918,11 @@
                     arrowParent.classList.toggle("showMenu");
                 });
             }
-            let sidebar = document.querySelector(".sidebar");
+            let sidebar = document.querySelector(".main-sidebar");
             let sidebarBtn = document.querySelector(".bx-menu");
             console.log(sidebarBtn);
             sidebarBtn.addEventListener("click", () => {
-                sidebar.classList.toggle("close");
+                sidebar.classList.toggle("closee");
             });
 
             ///////////////////SCROLL/////////////////////
