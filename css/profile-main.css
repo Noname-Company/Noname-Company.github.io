@@ -348,6 +348,7 @@ body {
 
 .large-side-control  {
     margin-left: 30px;
+    margin-bottom: 55px;
     padding: 0;
     width: 100%;
     display: none;
@@ -388,7 +389,7 @@ body {
     bottom: 0;
     justify-content: space-around;
     align-items: center;
-    background: #131313;
+    background: transparent;
     border-left: 0.5px solid #575757;
     width: 250px;
     height: 50px;
@@ -421,14 +422,8 @@ body {
 
 .profile-main-section a {
     text-decoration: none;
-    font-size: 20px;
-    color: #818181;
     display: block;
     transition: 0.3s;
-}
-
-.profile-main-section a:hover {
-    color: #f1f1f1;
 }
 
 .profile-main-section .closebtn {
@@ -549,13 +544,14 @@ body {
 .profile-main-section .profile-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     background: #1f1f1f;
     width: calc(100% - 30px);
     max-height: 250px;
     border-radius: 15px;
     margin: 15px 0;
     padding-bottom: 10px;
+    padding-right: 10px;
     margin-bottom: 30px;
 }
 .profile-main-section .profile-info .profile-top {
@@ -594,7 +590,7 @@ body {
 
 .profile-main-section .profile-info .emoji {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 5px;
     color: #b8b8b8;
@@ -612,7 +608,8 @@ body {
 
 /****PROFILE NAME AND VERIFIED ICON****/
 .profile-main-section .profile-info .profile-name {
-    padding: 12px 8px;
+    padding: 8px 8px;
+    margin:5px 0;
     text-decoration: none;
     font-size: 15px;
     color: #fff;
@@ -648,7 +645,6 @@ body {
     margin: 5px 15px;
     margin-top: -30px;    
 }
-
 
 .profile-main-section .profile-info .profile-buttons button .message-span {
     color: #fff;
@@ -920,6 +916,10 @@ body {
 
     margin-left: 100px;
   }
+  .close-group-message-button {
+
+    margin-left: 150px;
+  }
 
 
 
@@ -1064,6 +1064,71 @@ body {
     height: 350px;
     overflow-y: auto;
 }
+
+
+
+/*****************************    GROUP MESSAGES ****************************/
+
+.user-message-container {
+
+    display: flex;
+    justify-content: flex-end;
+}
+.friend-message-container {
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user-message-image {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+
+}
+.user-message-image img {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    
+}
+
+.user-message-name{
+
+    color: #1C1C1C;
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-message-name:hover{
+
+    color: #313131;
+    
+}
+
+.user-message-name span{
+
+    color: #fff;
+    background-color: rgb(190, 4, 4);
+    font-size: 8px;
+    font-family: 'Segoe UI';
+    padding: 2px 3px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.user-message-name .verified-icon{
+
+    color: #fff;
+    margin-left: 5px;
+}
+
 
 .message-dm-dropdown-content .user-message {
 
@@ -1259,8 +1324,14 @@ body {
 }
 
 .profile-game-rooms {
-    display: block;
-    max-width: max-content;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+.profile-game-rooms:hover {
+    background: #353535;
 }
 
 .game-rooms::-webkit-scrollbar-track {
@@ -1271,7 +1342,6 @@ body {
 
 .game-rooms::-webkit-scrollbar {
     width: 4px;
-    margin-block: 15px;
     background-color: #363535;
 }
 
@@ -1313,10 +1383,13 @@ body {
 }
 
 .profile-game-rooms .game-name {
-    display: inline-block;
+    display: flex;
     max-width: 90px;
-    vertical-align: middle;
+    align-items: center;
     margin-right: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 10px;
 }
 
 .profile-game-rooms .game-image img {
@@ -2393,7 +2466,7 @@ img {
     .content-info h2 {
         font-size: 10px;
     }
-    .sidebar {
+    .main-sidebar {
         display: none;
     }
     .profile-main-section {

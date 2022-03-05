@@ -1470,14 +1470,16 @@
                         <a href="" class="profile-tag"><i class="bi bi-controller"></i> Oyun Odalarım</a>
     
                         <div class="game-rooms">
-                            <div class="profile-game-rooms">
+                            <div class="profile-game-rooms" role="button" onclick="messageGroupDropdown()">
                                 <div class="game-image">
                                     <img src="./img/valorant.jpg" alt="">
                                 </div>
     
                                 <div class="game-name">
-                                    <a href="">Valorant</a>
+                                    Valorant
+                                    
                                 </div>
+                               
                             </div>
                             <div class="profile-game-rooms">
                                 <div class="game-image">
@@ -1570,6 +1572,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
     
     
@@ -1623,6 +1626,7 @@
                     </div>
     
                 </div>
+                
                 <div class="bottom-message-section">
 
                     <div class="message-dropdown">
@@ -1825,12 +1829,163 @@
 
 
                         </div>
+
+
+
+
+
+                        <!----------------------------- GRUP MESAJLARI -------------------------------->
+
+
+
+
+                        <div id="message-group-dropdown-content" class="message-dm-dropdown-content">
+                            
+                            <div class="message-top">
+                                <div class="profile-holder">
+                                    <div class="profile-image">
+                                        <img src="./img/valorant.jpg" alt="">
+                                    </div>
+                                    <div class="profile-name">
+                                        <a href="">Valorant</a>
+                                    </div>
+                                </div>
+                                
+                                
+                                <button onclick="messageGroupDropdown()" class="close-group-message-button" ><i class="bi bi-x-lg"></i></button>
+                                
+                            </div>
+                           
+                            <div class="message-content" id="message-content">
+                                
+                                
+                                <div class="user-message-container">
+                                    
+                                    <div class="user-message-image">
+                                        <img src="img/senel.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="user-message">
+                                        <a class= "user-message-name" href="">senel<span>admin</span><i class="verified-icon bi bi-patch-check-fill"></i></a>
+                                        <p>Lm, iste?</p>
+                                        <div class="message-features" >
+                                            <span>23.57</span>
+                                            <button type="button" id="message-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="message-features">
+                                            <a href=""><i class="bi bi-trash-fill"></i> Mesajı Sil</a>
+                                            <a href=""><i class="bi bi-reply-fill"></i> Cevapla</a>
+                                            <a href=""><i class="bi bi-forward-fill"></i> Yönlendir</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="friend-message-container">
+                                    
+                                    <div class="user-message-image">
+                                        <img src="img/profile1.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="friend-message">
+                                        <a class= "user-message-name" href="">bkaan99<span>admin</span></a>
+                                        <p>Lorem, ipsum dolor.</p>
+                                        <div class="message-features" >
+                                            <span>23.57</span>
+                                            <button type="button" id="message-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="message-features">
+                                            <a href=""><i class="bi bi-trash-fill"></i> Mesajı Sil</a>
+                                            <a href=""><i class="bi bi-reply-fill"></i> Cevapla</a>
+                                            <a href=""><i class="bi bi-forward-fill"></i> Yönlendir</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-message-container">
+                                    
+                                    <div class="user-message-image">
+                                        <img src="img/senel.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="user-message">
+                                        <a class= "user-message-name" href="">senel<span>admin</span><i class="verified-icon bi bi-patch-check-fill"></i></a>
+                                        <p>Lm, iste?</p>
+                                        <div class="message-features" >
+                                            <span>23.57</span>
+                                            <button type="button" id="message-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="message-features">
+                                            <a href=""><i class="bi bi-trash-fill"></i> Mesajı Sil</a>
+                                            <a href=""><i class="bi bi-reply-fill"></i> Cevapla</a>
+                                            <a href=""><i class="bi bi-forward-fill"></i> Yönlendir</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="friend-message-container">
+                                    
+                                    <div class="user-message-image">
+                                        <img src="img/profile3.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="friend-message">
+                                        <a class= "user-message-name" href="">spiffy</a>
+                                        <p>Lm, iste?</p>
+                                        <div class="message-features" >
+                                            <span>23.57</span>
+                                            <button><i class="bi bi-three-dots-vertical"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="friend-message-container">
+                                    
+                                    <div class="user-message-image">
+                                        <img src="img/profile2.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="friend-message">
+                                        <a class= "user-message-name" href="">stack<span>admin</span></a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, atque!</p>
+                                        <div class="message-features" >
+                                            <span>23.57</span>
+                                            <button><i class="bi bi-three-dots-vertical"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <div class="message-extensions-dropdown-content" id="group-message-extensions-dropdown-content">
+                                <button><i class="bi bi-filetype-gif"></i></button>
+                                <button><i class="bi bi-image-fill"></i></button>
+                                <button><i class="bi bi-file-text-fill"></i></button>
+                                <button><i class="bi bi-mic-fill"></i></button>
+                                <button><i class="bi bi-emoji-smile-fill"></i></button>
+                            </div>
+        
+        
+        
+                            <div class="message-bottom">
+        
+                                <button onclick="messageGroupExtensionsDropdown()" class="extensions-button" id="group-extensions-button"><i class="bi bi-plus"></i></button>
+                                <div class="message-input-group">
+                                    <input type="text" placeholder="Bir mesaj yaz...">
+                                    <button type="submit"><i class="bi bi-emoji-smile-fill"></i></button>
+                                </div>
+                                <button type="submit"><i class="bi bi-send-fill"></i></button>
+                            </div>
+        
+        
+                        </div>
                     </div>
 
                     <button><i class="bi bi-plus-square-fill"></i></button>
                     <button><i class="bi bi-bell-fill"></i><span class="message-span">12</span></button>
 
                 </div>
+
+                
             </div>
             
 
@@ -1865,9 +2020,20 @@
             document.getElementById("extensions-button").classList.toggle("extensions-button-animation");
 
             }
+            function messageGroupExtensionsDropdown() {
+            document.getElementById("group-message-extensions-dropdown-content").classList.toggle("extension-show");
+            document.getElementById("group-extensions-button").classList.toggle("extensions-button-animation");
+
+            }
 
             let objDiv = document.getElementById("message-content");
                 objDiv.scrollTop = objDiv.scrollHeight;
+
+
+
+            function messageGroupDropdown() {
+            document.getElementById("message-group-dropdown-content").classList.toggle("show");
+            }
             
 
             // window.onclick = function(event) {
