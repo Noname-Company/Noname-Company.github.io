@@ -1,0 +1,90 @@
+/*************** İLAN SAYFASI *********/
+
+
+.ilan-main-container {
+    
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    margin: 100px;
+}
+
+.ilan-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ilan-container-header {
+    
+    width: calc(100% - 400px);
+    min-width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    margin: 30px 20px 30px 30px;
+    background: #8c5cf2;
+}
+
+.ilan-container-content {
+
+    margin: 30px 20px 30px 30px;
+    width: calc(100% - 400px);
+
+}
+
+.game-select {
+
+    background: #8c5cf2;
+    border: none;
+    outline: none;
+    max-width: 500px;
+}
+.game-select option{
+
+    background: #fff;
+}
+
+.radio-container {
+
+    display: flex;
+    align-items: center;
+}
+.radio-select {
+
+    background-color: #1c1c1c;
+    border: 1px solid #8c5cf2;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.radio-select:checked {
+
+    background-color: #1c1c1c;
+    border: 1px solid #8c5cf2;
+}
+
+
+.ilan-textarea {
+
+
+    width: 100%;
+    min-width: 200px;
+    margin-top: 30px;
+    min-height: 150px;
+    background: #1c1c1c;
+    border: 2px solid #8c5cf2;
+    color: #fff;
+}
+
+.ilan-textarea:focus{
+
+    background: #1c1c1c;
+    border: 2px solid #8c5cf2;
+    color: #fff;
+
+
+}

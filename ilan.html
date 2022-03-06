@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlan Ver - Skeletton</title>
+    
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ilan.css">
+
+    <link rel="stylesheet" href="css/profile-main.css">
+
+
+    <link rel="stylesheet" href="css/icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+    <div class="main-sidebar closee">
+        <div class="logo-details">
+            <img class="bx-menu" src="img/symbol.png" alt="">
+            <a href="#" class="logo_name">Skeletton</a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">
+                    <i class='bi bi-house-door'></i>
+                    <span class="link_name">Ana Sayfa</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Ana Sayfa</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">Category</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Category</a></li>
+                    <li><a href="#">HTML & CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP & MySQL</a></li>
+                    <li><a href="#">HTML & CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP & MySQL</a></li>
+                    <li><a href="#">HTML & CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP & MySQL</a></li>
+                    <li><a href="#">HTML & CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP & MySQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="link_name">Posts</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Posts</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Login Form</a></li>
+                    <li><a href="#">Card Design</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="link_name">Analytics</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Analytics</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Chart</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Chart</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-plug'></i>
+                        <span class="link_name">Plugins</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Plugins</a></li>
+                    <li><a href="#">UI Face</a></li>
+                    <li><a href="#">Pigments</a></li>
+                    <li><a href="#">Box Icons</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-compass'></i>
+                    <span class="link_name">Explore</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Explore</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-history'></i>
+                    <span class="link_name">History</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">Setting</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Setting</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img class="bx-menu" src="img/profile.png" alt="profileImg">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Mustafa Şenel</div>
+                        <div class="job">Web Desginer</div>
+                    </div>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-container" id="main-container">
+
+
+        <div class="game-section">
+            <div class="ilan-main-container" style="background-image: url(img/background2.png);">
+                <div class="ilan-container">
+                    <div class="ilan-container-header">
+                        <h4>Yeni İlan Oluştur</h4>
+                    </div>
+                    <div class="ilan-container-content">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <select class="form-select game-select">
+                                    <option selected>Oyunu Seçiniz.</option>
+                                    <option value="1">Valorant</option>
+                                    <option value="2">CS GO</option>
+                                    <option value="3">Leauge of Legends</option>
+                                </select>
+                                
+    
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check shadow-none mb-4 radio-container">
+                                    <input class="form-check-input shadow-none radio-select" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                    Oyun Arkadaşı
+                                    </label>
+                                </div>
+                                <div class="form-check shadow-none radio-container">
+                                    <input class="form-check-input shadow-none radio-select" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                    Takım Arkadaşı
+                                    </label>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="form-floating">
+                            <textarea class="form-control shadow-none ilan-textarea" placeholder="Lütfen açıklama giriniz." id="floatingTextarea2" style="height: 200px;"></textarea>
+                            <label for="floatingTextarea2">Açıklama</label>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+        <div id="mySidebar" class="profile-main-section">
+            <a class="openbtn" id="openbtn" onclick="openNav()"><i class="bi bi-arrow-bar-left"></i></a>
+
+            <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()"><i class="bi bi-arrow-bar-right"></i></a>
+
+            <div class="mini-side-control" id="mini-side-control">
+
+                <img class="mini-side-profile-image" src="img/senel.jpg" alt="">
+
+                <p><i class="bi bi-controller"></i></p>
+                <div class="users">
+                    <a href=""><img class="mini-side-game-image" src="img/valorant.jpg" alt=""></a>
+                </div>
+                <div class="users">
+                    <a href=""><img class="mini-side-game-image" src="img/fortnite.jpg" alt=""></a>
+                </div>
+                <div class="users">
+                    <a href=""><img class="mini-side-game-image" src="img/forza5.jpg" alt=""></a>
+                </div>
+                <div class="users">
+                    <a href=""><img class="mini-side-game-image" src="img/amongus.jpg" alt=""></a>
+                </div>
+
+
+
+                <p><i class="bi bi-people"></i></p>
+                <div class="users">
+                    <a href=""><img class="mini-side-game-image" src="img/profile1.jpg" alt=""></a>
+                    <i class="bi bi-circle-fill status-icons-green"></i>
+                </div>
+                <div class="users">
+                    <a href=""><img class="mini-side-game-image" src="img/senel.jpg" alt=""></a>
+                    <i class="bi bi-circle-fill status-icons-red"></i>
+                </div>
+                <div class="users">
+                    <a href=""><img class="mini-side-game-image" src="img/profile2.jpg" alt=""></a>
+                    <i class="bi bi-circle-fill status-icons-yellow"></i>
+                </div>
+                <div class="users">
+                    <a href=""><img class="mini-side-game-image" src="img/profile3.jpg" alt=""></a>
+                    <i class="bi bi-circle-fill status-icons-gray"></i>
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <div class="large-side-control" id="large-side-control">
+                <div class="profile-section-1" >
+               
+                    <div class="profile-info" style="margin-top: 70px;">
+                        
+                        <div class="profile-top">
+                            <div class="profile-image">
+                                <img src="img/senel.jpg" alt="">    
+                            </div>
+                            <i class="bi bi-circle-fill profile-status-icon-green"></i>
+
+    
+                        </div>
+                        
+                        <div class="profile-buttons">
+                            <div class="profile-dropdown">
+                                <button onclick="topDropdown()" class="dropbtn">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </button>
+                                <div id="topDropdown-content" class="dropdown-content">
+                                  <a href="#home"><i class="bi bi-circle-fill dropdown-status-icons-green"></i>Çevrimiçi</a>
+                                  <a href="#about"><i class="bi bi-circle-fill dropdown-status-icons-gray"></i>Çevrimdışı</a>
+                                  <a href="#contact"><i class="bi bi-circle-fill dropdown-status-icons-yellow"></i>Uzakta</a>
+                                  <a href="#contact"><i class="bi bi-circle-fill dropdown-status-icons-red"></i>Meşgul</a>
+                                  <hr>
+                                  <a href="#contact"><i class="bi bi-person"></i>Profil</a>
+                                  <a href="#contact"><i class="bi bi-text-right"></i>İlanlarım</a>
+                                  <a href="#contact"><i class="bi bi-plus"></i>Yeni Oda</a>
+    
+    
+                                </div>
+                              </div>
+                        </div>
+                        
+    
+    
+                        <p class="profile-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+    
+    
+                        <a href="" class="profile-button">Profili Düzenle</a>
+    
+                        <div class="emoji">
+                            <p class="emoji-count"><i class="bi bi-emoji-smile-fill"></i>3</p>
+                            <p class="emoji-count"><i class="bi bi-heart-fill"></i>5</p>
+                            <p class="emoji-count"><i class="bi bi-dpad-fill"></i>13</p>
+                        </div>
+    
+    
+                    </div>
+                    <div class="profile-info">
+    
+                        <a href="" class="profile-tag"><i class="bi bi-controller"></i> Oyun Odalarım</a>
+    
+                        <div class="game-rooms">
+                            <div class="profile-game-rooms" role="button" onclick="messageGroupDropdown()">
+                                <div class="game-image">
+                                    <img src="./img/valorant.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    Valorant
+                                    
+                                </div>
+                               
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/csgo.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">CS GO</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/lool.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Leauge of Legends</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/apex.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Apex Legends</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/apex.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Apex Legends</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/apex.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Apex Legends</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/apex.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Apex Legends</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/apex.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Apex Legends</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/apex.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Apex Legends</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/apex.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Apex Legends</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/apex.jpg" alt="">
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Apex Legends</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+    
+                    <div class="profile-info">
+    
+                        <a href="" class="profile-tag"><i class="bi bi-people"></i> Arkadaşlar</a>
+    
+                        <div class="game-rooms">
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/profile1.jpg" alt="">
+                                    <i class="bi bi-circle-fill status-icons-green"></i>
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Bilge Kaan Gürgen</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/profile2.jpg" alt="">
+                                    <i class="bi bi-circle-fill status-icons-red"></i>
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Süleyman Karakoç</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/profile3.jpg" alt="">
+                                    <i class="bi bi-circle-fill status-icons-yellow"></i>
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Berat Maviş</a>
+                                </div>
+                            </div>
+                            <div class="profile-game-rooms">
+                                <div class="game-image">
+                                    <img src="./img/senel.jpg" alt="">
+                                    <i class="bi bi-circle-fill status-icons-gray"></i>
+                                </div>
+    
+                                <div class="game-name">
+                                    <a href="">Mustafa Şenel</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+                
+                <div class="bottom-message-section">
+
+                    <div class="message-dropdown">
+                        <button onclick="messageDropdown()" class="message-dropbtn" id="message-dropbtn" title="Mesajlar">
+                            <i class="bi bi-chat-right-dots-fill"></i><span class="message-span">25</span>
+                        </button>
+
+                        <div id="message-dropdown-content" class="message-dropdown-content">
+                            
+                            <div class="message-top">
+                                <a href="">Mesajlar</a>
+                                <button onclick="messageDropdown()" class="close-message-button" id="message-dropdown-content"><i class="bi bi-x-lg"></i></button>
+                            </div>
+                           
+                            <div class="message-content">
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
+                                    <div class="profile-image">
+                                        <img src="./img/senel.jpg" alt="">
+                                    </div>
+        
+                                    <div class="profile-name">
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
+                                    <div class="profile-image">
+                                        <img src="./img/senel.jpg" alt="">
+                                    </div>
+        
+                                    <div class="profile-name">
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
+                                    <div class="profile-image">
+                                        <img src="./img/senel.jpg" alt="">
+                                    </div>
+        
+                                    <div class="profile-name">
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
+                                    <div class="profile-image">
+                                        <img src="./img/senel.jpg" alt="">
+                                    </div>
+        
+                                    <div class="profile-name">
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
+                                    <div class="profile-image">
+                                        <img src="./img/senel.jpg" alt="">
+                                    </div>
+        
+                                    <div class="profile-name">
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
+                                    <div class="profile-image">
+                                        <img src="./img/senel.jpg" alt="">
+                                    </div>
+        
+                                    <div class="profile-name">
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-message" onclick="messageDmDropdown()" role="button">
+                                    <div class="profile-image">
+                                        <img src="./img/senel.jpg" alt="">
+                                    </div>
+        
+                                    <div class="profile-name">
+                                        <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
+                                        <p class="message-send-content">ilk mesaj</p>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+
+                        </div>
+                        <div id="message-dm-dropdown-content" class="message-dm-dropdown-content">
+                            
+                            <div class="message-top">
+                                <button onclick="messageDmDropdown()" class="close-message-button" id="message-dm-dropdown-content"><i class="bi bi-arrow-90deg-left"></i></button>
+                                <div class="profile-holder">
+                                    <div class="profile-image">
+                                        <img src="./img/senel.jpg" alt="">
+                                    </div>
+                                    <div class="profile-name">
+                                        <a href="">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></a>
+                                    </div>
+                                </div>
+                                
+                                
+                                <button onclick="messageDmDropdownClose()" class="close-dm-message-button" ><i class="bi bi-x-lg"></i></button>
+                                
+                            </div>
+                           
+                            <div class="message-content" id="message-content">
+                                <div class="user-message">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ut esse neque incidunt fugit aliquid est debitis nobis. Ullam, iste?</p>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button><i class="bi bi-three-dots-vertical"></i></button>
+                                    </div>
+                                </div>
+                                <div class="friend-message">
+                                    <p>iyi senden</p>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button><i class="bi bi-three-dots-vertical"></i></button>
+                                    </div>
+                                </div>
+                                <div class="user-message">
+                                    <p>hacı naber</p>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button><i class="bi bi-three-dots-vertical"></i></button>
+                                    </div>
+                                </div>
+                                <div class="friend-message">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ex.</p>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button><i class="bi bi-three-dots-vertical"></i></button>
+                                    </div>
+                                </div>
+                                <div class="user-message">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button><i class="bi bi-three-dots-vertical"></i></button>
+                                    </div>
+                                </div>
+                                <div class="friend-message">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button type="button" id="message-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="message-features">
+                                            <a href=""><i class="bi bi-trash-fill"></i> Mesajı Sil</a>
+                                            <a href=""><i class="bi bi-reply-fill"></i> Cevapla</a>
+                                            <a href=""><i class="bi bi-forward-fill"></i> Yönlendir</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="user-message">
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <div class="message-features" >
+                                        <span>23.57</span>
+                                        <button type="button" id="message-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="message-features">
+                                            <a href=""><i class="bi bi-trash-fill"></i> Mesajı Sil</a>
+                                            <a href=""><i class="bi bi-reply-fill"></i> Cevapla</a>
+                                            <a href=""><i class="bi bi-forward-fill"></i> Yönlendir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <div class="message-extensions-dropdown-content" id="message-extensions-dropdown-content">
+                                <button><i class="bi bi-filetype-gif"></i></button>
+                                <button><i class="bi bi-image-fill"></i></button>
+                                <button><i class="bi bi-file-text-fill"></i></button>
+                                <button><i class="bi bi-mic-fill"></i></button>
+                                <button><i class="bi bi-emoji-smile-fill"></i></button>
+                            </div>
+
+
+
+                            <div class="message-bottom">
+
+                                <button onclick="messageExtensionsDropdown()" class="extensions-button" id="extensions-button"><i class="bi bi-plus"></i></button>
+                                <div class="message-input-group">
+                                    <input type="text" placeholder="Bir mesaj yaz...">
+                                    <button type="submit"><i class="bi bi-emoji-smile-fill"></i></button>
+                                </div>
+                                <button type="submit"><i class="bi bi-send-fill"></i></button>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                        <!----------------------------- GRUP MESAJLARI -------------------------------->
+
+
+
+
+                        <div id="message-group-dropdown-content" class="message-dm-dropdown-content">
+                            
+                            <div class="message-top">
+                                <div class="profile-holder">
+                                    <div class="profile-image">
+                                        <img src="./img/valorant.jpg" alt="">
+                                    </div>
+                                    <div class="profile-name">
+                                        <a href="">Valorant</a>
+                                    </div>
+                                </div>
+                                
+                                
+                                <button onclick="messageGroupDropdown()" class="close-group-message-button" ><i class="bi bi-x-lg"></i></button>
+                                
+                            </div>
+                           
+                            <div class="message-content" id="message-content">
+                                
+                                
+                                <div class="user-message-container">
+                                    
+                                    <div class="user-message-image">
+                                        <img src="img/senel.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="user-message">
+                                        <a class= "user-message-name" href="">senel<span>admin</span><i class="verified-icon bi bi-patch-check-fill"></i></a>
+                                        <p>Lm, iste?</p>
+                                        <div class="message-features" >
+                                            <span>23.57</span>
+                                            <button type="button" id="message-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="message-features">
+                                            <a href=""><i class="bi bi-trash-fill"></i> Mesajı Sil</a>
+                                            <a href=""><i class="bi bi-reply-fill"></i> Cevapla</a>
+                                            <a href=""><i class="bi bi-forward-fill"></i> Yönlendir</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="friend-message-container">
+                                    
+                                    <div class="user-message-image">
+                                        <img src="img/profile1.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="friend-message">
+                                        <a class= "user-message-name" href="">bkaan99<span>admin</span></a>
+                                        <p>Lorem, ipsum dolor.</p>
+                                        <div class="message-features" >
+                                            <span>23.57</span>
+                                            <button type="button" id="message-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="message-features">
+                                            <a href=""><i class="bi bi-trash-fill"></i> Mesajı Sil</a>
+                                            <a href=""><i class="bi bi-reply-fill"></i> Cevapla</a>
+                                            <a href=""><i class="bi bi-forward-fill"></i> Yönlendir</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-message-container">
+                                    
+                                    <div class="user-message-image">
+                                        <img src="img/senel.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="user-message">
+                                        <a class= "user-message-name" href="">senel<span>admin</span><i class="verified-icon bi bi-patch-check-fill"></i></a>
+                                        <p>Lm, iste?</p>
+                                        <div class="message-features" >
+                                            <span>23.57</span>
+                                            <button type="button" id="message-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="message-features">
+                                            <a href=""><i class="bi bi-trash-fill"></i> Mesajı Sil</a>
+                                            <a href=""><i class="bi bi-reply-fill"></i> Cevapla</a>
+                                            <a href=""><i class="bi bi-forward-fill"></i> Yönlendir</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="friend-message-container">
+                                    
+                                    <div class="user-message-image">
+                                        <img src="img/profile3.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="friend-message">
+                                        <a class= "user-message-name" href="">spiffy<i class="verified-icon bi bi-patch-check-fill"></i></a>
+                                        <p>Lm, iste?</p>
+                                        <div class="message-features" >
+                                            <span>23.57</span>
+                                            <button><i class="bi bi-three-dots-vertical"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="friend-message-container">
+                                    
+                                    <div class="user-message-image">
+                                        <img src="img/profile2.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="friend-message">
+                                        <a class= "user-message-name" href="">stack<span>admin</span></a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, atque!</p>
+                                        <div class="message-features" >
+                                            <span>23.57</span>
+                                            <button><i class="bi bi-three-dots-vertical"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <div class="message-extensions-dropdown-content" id="group-message-extensions-dropdown-content">
+                                <button><i class="bi bi-filetype-gif"></i></button>
+                                <button><i class="bi bi-image-fill"></i></button>
+                                <button><i class="bi bi-file-text-fill"></i></button>
+                                <button><i class="bi bi-mic-fill"></i></button>
+                                <button><i class="bi bi-emoji-smile-fill"></i></button>
+                            </div>
+        
+        
+        
+                            <div class="message-bottom">
+        
+                                <button onclick="messageGroupExtensionsDropdown()" class="extensions-button" id="group-extensions-button"><i class="bi bi-plus"></i></button>
+                                <div class="message-input-group">
+                                    <input type="text" placeholder="Bir mesaj yaz...">
+                                    <button type="submit"><i class="bi bi-emoji-smile-fill"></i></button>
+                                </div>
+                                <button type="submit"><i class="bi bi-send-fill"></i></button>
+                            </div>
+        
+        
+                        </div>
+                    </div>
+
+                    <button><a href="ilan.html" title="Yeni ilan oluştur."><i class="bi bi-plus-square-fill"></i></a></button>
+                    <button title="Bildirimler" ><i class="bi bi-bell-fill"></i><span class="message-span">12</span></button>
+
+                </div>
+
+                
+            </div>
+            
+
+
+
+
+
+
+        </div>
+        <script>
+
+            //////////////////////DROPDOWN///////////////////
+       
+            function topDropdown() {
+            document.getElementById("topDropdown-content").classList.toggle("show");
+            }
+
+            function messageDropdown() {
+            document.getElementById("message-dropdown-content").classList.toggle("show");
+            }
+
+            function messageDmDropdown() {
+            document.getElementById("message-dm-dropdown-content").classList.toggle("show");
+            document.getElementById("message-dropdown-content").classList.toggle("show");
+            }
+            function messageDmDropdownClose() {
+            document.getElementById("message-dm-dropdown-content").classList.toggle("show");
+            }
+
+            function messageExtensionsDropdown() {
+            document.getElementById("message-extensions-dropdown-content").classList.toggle("extension-show");
+            document.getElementById("extensions-button").classList.toggle("extensions-button-animation");
+
+            }
+            function messageGroupExtensionsDropdown() {
+            document.getElementById("group-message-extensions-dropdown-content").classList.toggle("extension-show");
+            document.getElementById("group-extensions-button").classList.toggle("extensions-button-animation");
+
+            }
+
+            let objDiv = document.getElementById("message-content");
+                objDiv.scrollTop = objDiv.scrollHeight;
+
+
+
+            function messageGroupDropdown() {
+            document.getElementById("message-group-dropdown-content").classList.toggle("show");
+            }
+            
+
+            // window.onclick = function(event) {
+            // if (!event.target.matches('.message-dropbtn')) {
+            //     var openDropdown = document.getElementById("message-dropdown-content");
+                
+            //     if (openDropdown.classList.contains('show')) {
+            //         openDropdown.classList.remove('show');
+            //     }
+                
+            // }
+            // }
+        </script>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main-container").style.marginRight = "250px";
+                document.getElementById("closebtn").style.display = "block";
+                document.getElementById("openbtn").style.display = "none";
+
+                setTimeout(() => {
+                    document.getElementById("large-side-control").style.display = "flex";
+                    document.getElementById("mini-side-control").style.display = "none";
+                }, 500); // delay in milliseconds
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "80px";
+                document.getElementById("main-container").style.marginRight = "80px";
+                document.getElementById("closebtn").style.display = "none";
+                document.getElementById("openbtn").style.display = "block";
+
+                document.getElementById("large-side-control").style.display = "none";
+                document.getElementById("mini-side-control").style.display = "flex";
+            }
+        </script>
+
+
+
+
+
+        <script>
+            let arrow = document.querySelectorAll(".arrow");
+            for (var i = 0; i < arrow.length; i++) {
+                arrow[i].addEventListener("click", (e) => {
+                    let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+                    arrowParent.classList.toggle("showMenu");
+                });
+            }
+            let sidebar = document.querySelector(".main-sidebar");
+            let sidebarBtn = document.querySelector(".bx-menu");
+            console.log(sidebarBtn);
+            sidebarBtn.addEventListener("click", () => {
+                sidebar.classList.toggle("closee");
+            });
+
+            ///////////////////SCROLL/////////////////////
+
+            const buttonRight = document.getElementById('slideRight');
+            const buttonLeft = document.getElementById('slideLeft');
+
+            buttonRight.onclick = function() {
+                document.getElementById('wrapper2').scrollLeft += 540;
+            };
+            buttonLeft.onclick = function() {
+                document.getElementById('wrapper2').scrollLeft -= 540;
+            };
+
+            const buttonRightHaber = document.getElementById('slideRightHaber');
+            const buttonLeftHaber = document.getElementById('slideLeftHaber');
+
+            buttonRightHaber.onclick = function() {
+                document.getElementById('wrapper-haber').scrollLeft += 540;
+            };
+            buttonLeftHaber.onclick = function() {
+                document.getElementById('wrapper-haber').scrollLeft -= 540;
+            };
+
+            const buttonRightProfiles = document.getElementById('slideRightProfiles');
+            const buttonLeftProfiles = document.getElementById('slideLeftProfiles');
+
+            buttonRightProfiles.onclick = function() {
+                document.getElementById('wrapper-profiles').scrollLeft += 540;
+            };
+            buttonLeftProfiles.onclick = function() {
+                document.getElementById('wrapper-profiles').scrollLeft -= 540;
+            };
+
+            const buttonRightIlan = document.getElementById('slideRightIlan');
+            const buttonLeftIlan = document.getElementById('slideLeftIlan');
+
+            buttonRightIlan.onclick = function() {
+                document.getElementById('wrapper-ilanlar').scrollLeft += 540;
+            };
+            buttonLeftIlan.onclick = function() {
+                document.getElementById('wrapper-ilanlar').scrollLeft -= 540;
+            };
+        </script>
+        
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
