@@ -161,7 +161,7 @@
 
                 <div class="wrapper-content-main">
                     <div class="content-info">
-                        <h2>OYUNLAR</h2>
+                        <h2>POPÜLER OYUN ODALARI</h2>
                         <a href="profile-games.html">Hepsi</a>
                     </div>
                     <div class="wrapper-content">
@@ -865,8 +865,55 @@
                     </div>
 
                 </div>
-
                 <div class="wrapper-content-main">
+                    <div class="content-info">
+                        <h2>OYUNLAR</h2>
+                        <a href="profile-games.html">Hepsi</a>
+                    </div>
+                    <div class="wrapper-content">
+                        <button class="scroll-arrow-left" id="slideGameLeft" type="button"><i class="bi bi-caret-left-fill"></i></button>
+                        <div class="wrapper2" id="wrapper-games">
+                                                
+                            <figure class="game-cards">
+                                <img src="img/dota2.jpg" />
+                                <figcaption><a href="#">Listele</a></figcaption>
+                            </figure>
+                            <figure class="game-cards">
+                                <img src="img/lool.jpg" />
+                                <figcaption><a href="#">Listele</a></figcaption>
+                            </figure>
+                            <figure class="game-cards">
+                                <img src="img/pubg.jpg" />
+                                <figcaption><a href="#">Listele</a></figcaption>
+                            </figure>
+                            <figure class="game-cards">
+                                <img src="img/forza5.jpg" />
+                                <figcaption><a href="#">Listele</a></figcaption>
+                            </figure>
+                            <figure class="game-cards">
+                                <img src="img/eurotruck.jpg" />
+                                <figcaption>Euro Truck Simulator 2</figcaption>
+                            </figure>
+                            <figure class="game-cards">
+                                <img src="img/gta5.jpg" />
+                                <figcaption>GTA 5</figcaption>
+                            </figure>
+                            <figure class="game-cards">
+                                <img src="img/csgo.jpg" />
+                                <figcaption>CS GO</figcaption>
+                            </figure>
+                            <figure class="game-cards">
+                                <img src="img/fortnite.jpg" />
+                                <figcaption>Fortnite</figcaption>
+                            </figure>
+                
+                        </div>                      
+                        <button class="scroll-arrow-right" id="slideGameRight" type="button"><i class="bi bi-caret-right-fill"></i></button>
+                    </div>
+
+                </div>
+
+                <!-- <div class="wrapper-content-main">
                     <div class="content-info">
                         <h2>HABERLER</h2>
                         <a href="">Hepsi</a>
@@ -949,7 +996,7 @@
 
                     </div>
 
-                </div>
+                </div> -->
 
                 <div class="wrapper-content-main">
                     <div class="content-info">
@@ -958,7 +1005,6 @@
                     </div>
                     <div class="wrapper-content">
                         <button class="scroll-arrow-left" id="slideLeftProfiles" type="button"><i class="bi bi-caret-left-fill"></i></button>
-
                         <div class="wrapper2" id="wrapper-profiles" style="height: 450px;">
                             <div class="profile-card">
                                 <div class="ds-top"></div>
@@ -1252,7 +1298,6 @@
 
                         </div>
                         <button class="scroll-arrow-right" id="slideRightProfiles" type="button"><i class="bi bi-caret-right-fill"></i></button>
-
                     </div>
                 </div>
 
@@ -2104,16 +2149,29 @@
                 document.getElementById('wrapper2').scrollLeft -= 540;
             };
 
-            const buttonRightHaber = document.getElementById('slideRightHaber');
-            const buttonLeftHaber = document.getElementById('slideLeftHaber');
+            //////////////////////////////////////////
+            const buttonGameRight = document.getElementById('slideGameRight');
+            const buttonGameLeft = document.getElementById('slideGameLeft');
 
-            buttonRightHaber.onclick = function() {
-                document.getElementById('wrapper-haber').scrollLeft += 540;
+            buttonGameRight.onclick = function() {
+                document.getElementById('wrapper-games').scrollLeft += 540;
             };
-            buttonLeftHaber.onclick = function() {
-                document.getElementById('wrapper-haber').scrollLeft -= 540;
+            buttonGameLeft.onclick = function() {
+                document.getElementById('wrapper-games').scrollLeft -= 540;
             };
 
+            ////////////////////////////////////////////
+            // const buttonRightHaber = document.getElementById('slideRightHaber');
+            // const buttonLeftHaber = document.getElementById('slideLeftHaber');
+
+            // buttonRightHaber.onclick = function() {
+            //     document.getElementById('wrapper-haber').scrollLeft += 540;
+            // };
+            // buttonLeftHaber.onclick = function() {
+            //     document.getElementById('wrapper-haber').scrollLeft -= 540;
+            // };
+
+            //////////////////////////////////////////////////
             const buttonRightProfiles = document.getElementById('slideRightProfiles');
             const buttonLeftProfiles = document.getElementById('slideLeftProfiles');
 
@@ -2124,6 +2182,7 @@
                 document.getElementById('wrapper-profiles').scrollLeft -= 540;
             };
 
+            //////////////////////////////////////////////
             const buttonRightIlan = document.getElementById('slideRightIlan');
             const buttonLeftIlan = document.getElementById('slideLeftIlan');
 
