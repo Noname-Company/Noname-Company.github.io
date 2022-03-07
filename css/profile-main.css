@@ -763,6 +763,7 @@ body {
     background-color: #1C1C1C;
     margin-top: 15px;
     border-radius: 15px;
+    width: 350px;
     min-width: 350px;
     height: 400px;
     right: 20px;
@@ -790,6 +791,10 @@ body {
     font-size: 12px;
   }
 
+  .message-top-link {
+
+    color: #fff;
+  }
   
 
   .message-dropdown-content .message-content {
@@ -829,6 +834,7 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     padding: 5px 0;
 }
 .profile-message:hover {
@@ -875,6 +881,29 @@ body {
     font-weight: 100;
     
 }
+
+.notifications-container {
+
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 5px;
+   
+}
+.notifications-content{
+
+    color: aliceblue;
+    font-size: 12px;
+    font-family:'Segoe UI', sans-serif;
+    font-style: normal;
+    
+}
+.notifications-content:hover{
+
+    color: aliceblue;
+    
+}
+
   
   .show {display: block;}
 
@@ -1392,9 +1421,9 @@ body {
 }
 
 .profile-game-rooms .game-name {
-    display: flex;
+    
+    flex-grow: 4;
     max-width: 90px;
-    align-items: center;
     margin-right: 10px;
     text-decoration: none;
     color: aliceblue;
@@ -1414,6 +1443,33 @@ body {
     color: aliceblue;
     font-size: 10px;
 }
+
+.room-notifications{
+
+    display: flex;
+    flex-grow: 1;
+}
+
+.room-notifications span {
+
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 10px;
+    color: #fff;
+    background: #d60505;
+    border-radius: 6px;
+    padding: 3px 3px;
+    padding-bottom: 2px;
+}
+
+.room-notifications button {
+
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+}
+
 
 
 /* CONTENT INFO*/

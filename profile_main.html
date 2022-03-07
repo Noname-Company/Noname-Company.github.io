@@ -1525,6 +1525,9 @@
                                     Valorant
                                     
                                 </div>
+                                <div class="room-notifications">
+                                    <span>99+</span>
+                                </div>
                                
                             </div>
                             <div class="profile-game-rooms">
@@ -1636,6 +1639,14 @@
                                 <div class="game-name">
                                     <a href="">Bilge Kaan Gürgen</a>
                                 </div>
+
+                                <div class="room-notifications">
+                                    <button type="button" id="friend-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="friend-features">
+                                            <a href=""><i class="bi bi-chat-square-dots-fill"></i>Mesaj Gönder</a>
+                                            <a href=""><i class="bi bi-trash-fill"></i>Arkadaşlarımdan çıkar</a>
+                                        </div>
+                                </div>
                             </div>
                             <div class="profile-game-rooms">
                                 <div class="game-image">
@@ -1645,6 +1656,13 @@
     
                                 <div class="game-name">
                                     <a href="">Süleyman Karakoç</a>
+                                </div>
+                                <div class="room-notifications">
+                                    <button type="button" id="friend-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="friend-features">
+                                            <a href=""><i class="bi bi-chat-square-dots-fill"></i>Mesaj Gönder</a>
+                                            <a href=""><i class="bi bi-trash-fill"></i>Arkadaşlarımdan çıkar</a>
+                                        </div>
                                 </div>
                             </div>
                             <div class="profile-game-rooms">
@@ -1656,6 +1674,13 @@
                                 <div class="game-name">
                                     <a href="">Berat Maviş</a>
                                 </div>
+                                <div class="room-notifications">
+                                    <button type="button" id="friend-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="friend-features">
+                                            <a href=""><i class="bi bi-chat-square-dots-fill"></i>Mesaj Gönder</a>
+                                            <a href=""><i class="bi bi-trash-fill"></i>Arkadaşlarımdan çıkar</a>
+                                        </div>
+                                </div>
                             </div>
                             <div class="profile-game-rooms">
                                 <div class="game-image">
@@ -1665,6 +1690,13 @@
     
                                 <div class="game-name">
                                     <a href="">Mustafa Şenel</a>
+                                </div>
+                                <div class="room-notifications">
+                                    <button type="button" id="friend-features" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                        <div class="message-features-dropdown dropdown-menu" aria-labelledby="friend-features">
+                                            <a href=""><i class="bi bi-chat-square-dots-fill"></i>Mesaj Gönder</a>
+                                            <a href=""><i class="bi bi-trash-fill"></i>Arkadaşlarımdan çıkar</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -1695,7 +1727,7 @@
         
                                     <div class="profile-name">
                                         <p class="message-send-name">Mustafa Şenel<i class="verified-icon bi bi-patch-check-fill"></i></p>
-                                        <p class="message-send-content">ilk mesaj</p>
+                                        <p class="message-send-content">Lorem ipsum dolor sit amet.</p>
                                     </div>
                                 </div>
 
@@ -1888,6 +1920,9 @@
                         <div id="message-group-dropdown-content" class="message-dm-dropdown-content">
                             
                             <div class="message-top">
+                               
+                                <a href="#" class="message-top-link" id="message-dm-dropdown-content" title="Büyük pencereye geç."><i class="bi bi-arrow-up-right-square"></i></a>
+
                                 <div class="profile-holder">
                                     <div class="profile-image">
                                         <img src="./img/valorant.jpg" alt="">
@@ -2027,7 +2062,55 @@
                     </div>
 
                     <button><a href="ilan.html" title="Yeni ilan oluştur."><i class="bi bi-plus-square-fill"></i></a></button>
-                    <button title="Bildirimler" ><i class="bi bi-bell-fill"></i><span class="message-span">12</span></button>
+                    
+                    <div class="message-dropdown">
+                        <button onclick="notificationsDropdown()" class="message-dropbtn" id="notifications-dropbtn" title="Bildirimler" >
+                            <i class="bi bi-bell-fill"></i><span class="message-span">12</span>
+                        </button>
+
+                        <div id="notifications-dropdown-content" class="message-dropdown-content">
+                            
+                            <div class="message-top">
+                                <a href="">Bildirimler</a>
+                                <button onclick="notificationsDropdown()" class="close-message-button" id="message-dropdown-content"><i class="bi bi-x-lg"></i></button>
+                            </div>
+                           
+                            <div class="message-content">
+                                <div class="profile-message">
+                                    <div class="profile-image">
+                                        <img src="./img/amongus.jpg" alt="">
+                                    </div>
+        
+                                    <div class="notifications-container">
+                                        <a href="ilan.html" class="notifications-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quam? Lorem ipsum dolor sit amet.</a>
+                                    </div>
+                                </div>
+
+                                <div class="profile-message">
+                                    <div class="profile-image">
+                                        <img src="./img/lool.jpg" alt="">
+                                    </div>
+        
+                                    <div class="notifications-container">
+                                        <a href="ilan.html" class="notifications-content">Magni, quam?</a>
+                                    </div>
+                                </div>
+
+                                <div class="profile-message">
+                                    <div class="profile-image">
+                                        <img src="./img/gta5.jpg" alt="">
+                                    </div>
+        
+                                    <div class="notifications-container">
+                                        <a href="ilan.html" class="notifications-content">Lorem ipsum dolor </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -2051,6 +2134,9 @@
 
             function messageDropdown() {
             document.getElementById("message-dropdown-content").classList.toggle("show");
+            }
+            function notificationsDropdown() {
+            document.getElementById("notifications-dropdown-content").classList.toggle("show");
             }
 
             function messageDmDropdown() {
